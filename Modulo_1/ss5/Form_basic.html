@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form_basic</title>
+    <style>
+        fieldset{
+            width: 500px;
+        }
+    </style>
+
+</head>
+<body style="background-color: lightblue">
+<fieldset>
+    <h1 style=" text-align: center; color: white;background-color: red ">SỞ THÍCH CỦA BẠN </h1>
+    <form>
+        <table>
+            <tr>
+                <td >Họ và tên :</td>
+                <td><input type="text" style="margin-bottom: 10px"></td>
+
+            </tr>
+            <tr>
+                <td >Email :</td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td >Sở thích:</td>
+                <td>
+                    <input type="checkbox" name="hobbies">Shopping
+                    <input type="checkbox" name="hobbies">Game
+                    <input type="checkbox" name="hobbies">Sport <br>
+                    <input type="checkbox" name="hobbies">Music
+                    <input type="checkbox" name="hobbies">Book
+                    <input type="checkbox" name="hobbies">Web   <br>
+                    <input type="checkbox" name="hobbies">Travel
+                    <input type="checkbox" name="hobbies">Film
+                    <input type="checkbox" name="hobbies">Other
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <button type="submit">Gửi thông tin</button>
+                </td>
+                <td>
+                    <button type="reset">Nhập lại</button>
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+
+</fieldset>
+<br>
+<fieldset style="background-color: navajowhite">
+    <form>
+        <h1 style="text-align: center ;color: blue ; background-color: whitesmoke">ĐĂNG KÝ HỌC VIÊN </h1>
+        <table>
+
+            <tr>
+                <td style="color: green">Họ và tên :</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td style="color: green">Ngày sinh</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td style="color: green">Giới tính</td>
+                <td>
+                <input type="radio" name="gioitinh">Nam
+                <input type="radio" name="gioitinh">Nữ
+                </td>
+            </tr>
+            <tr>
+                <td style="color: green">Địa chỉ</td>
+                <td><textarea cols="20" rows="2"></textarea></td>
+            </tr>
+            <tr>
+                <td style="color: green">Lớp</td>
+                <td>
+                    <select>
+                        <option selected>--Chọn Lớp--</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: green">Email</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td style="color: green">Điện thoại</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Đăng ký</button>
+                </td>
+                <td>
+                    <button type="reset">Nhập lại</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</fieldset>
+
+</body>
+</html>
