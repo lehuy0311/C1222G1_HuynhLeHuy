@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Money_Converter</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+    </tr>
+    <tr>
+        <th>
+            <label><input id ="money" type="number"></label>
+        </th>
+
+        <th>
+            <label>
+                <select id ="from currency">
+                    <option value="VietNam">VND</option>
+                    <option value="American">USD</option>
+            </label>
+        </th>
+        <th>
+            <label >
+                <select id ="to currency">
+                    <option value="American">USD</option>
+                    <option value="VietNam">VND</option>
+            </label>
+        </th>
+        <th>
+            <button style="background-color: black ; color: white" onclick="Click()">Reverse</button>
+        </th>
+    </tr>
+</table>
+<p style="color: red" id="result" ></p>
+<script>
+    function Click() {
+        let money =+document.getElementById("money").value;
+        let VND = document.getElementById("from currency").value;
+        let USD = document.getElementById("to currency").value;
+        let result;
+
+        if ( VND ==="VietNam" && USD==="American"){
+            result= money/23000;
+        }else if(VND==="USD"&&USD==="VND"){
+            result=money*23000;
+        }else if(VND==="VND"&&VND==="VND"){
+            result=money;
+        }else {
+            result=money;
+        }
+        document.getElementById("result").innerHTML="<p style='color: red'>Result:" +result+"</p>";
+    }
+
+</script>
+
+</body>
+</html>
