@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI</title>
+</head>
+<body>
+    <h1>Tính chỉ số cân nặng BMI</h1>
+    <label for="can_nang">Nhập cân nặng:  (kg)</label>
+    <input type="number" id="can_nang">
+    <br>
+    <br>
+    <label for="chieu_cao">Nhập chiều cao:   (m)</label>
+    <input type="number" id="chieu_cao">
+    <br>
+    <hr>
+    <button onclick="checkBMI()">Check BMI</button>
+    <p id="result"></p>
+<script>
+    function checkBMI() {
+        let w = document.getElementById("can_nang").value;
+        let h = document.getElementById("chieu_cao").value;
+        let bmi = w/(h*h);
+        let result ="";
+
+        if (bmi < 18)
+            result = "Underweight";
+        else if (bmi < 25.0)
+            result = "Normal";
+        else if (bmi < 30.0)
+            result = "Overweight";
+        else
+            result = "Obese";
+
+        document.getElementById("result").innerHTML ="<p style='color: blue'>Chi so BMI cua ban la:" + bmi +  " .Result: "+  result+"</p>";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>So sánh với 0</title>
+</head>
+<body>
+    <h1>So sánh với 0</h1>
+    <label for="a">Nhập vào số bạn muốn so sánh</label>
+    <input type="number" id="a">
+    <br>
+    <br>
+    <button onclick="check()">Kiểm tra</button>
+    <p id="result"></p>
+
+    <script>
+        function check() {
+            let a = document.getElementById("a").value;
+
+            if (a >0) {
+                document.getElementById("result").innerHTML ="<p style='color: blue'>Số " + a + " lớn hơn 0</p>"
+            } else if (a <0){
+                document.getElementById("result").innerHTML ="<p style='color: blue'>Số " + a + " nhỏ hơn 0</p>"
+            }else {
+                document.getElementById("result").innerHTML ="<p style='color: blue'>Đây chính là số 0</p>"
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rose_Money</title>
+</head>
+<body>
+    <h1>Rose Money</h1>
+    <label for="a">Doanh so</label>
+    <input type="number" id="a">
+    <br>
+    <br>
+    <label for="b">Ti le</label>
+    <input type="number" id="b">
+    <br>
+    <br>
+    <button onclick="check()">Kiểm tra</button>
+    <p id="result"></p>
+
+<script>
+    function f() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let result = document.getElementById("result").result;
+        result = a * (b / 100);
+    }
+</script>
+
+</body>
+</html>

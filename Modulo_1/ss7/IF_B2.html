@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade_10</title>
+</head>
+<body>
+    <h1>Grade 10</h1>
+    <label for="a">Nhập vào số tuổi</label>
+    <input type="number" id="a">
+    <br>
+    <br>
+    <button onclick="check()">Kiểm tra</button>
+    <p id="result"></p>
+
+    <script>
+        function check() {
+            let a = document.getElementById("a").value;
+
+            if (a >=16) {
+                document.getElementById("result").innerHTML ="<p style='color: blue'>Số tuổi của bạn là" + a + " .Bạn đủ tuổi vào học lớp 10</p>"
+            } else {
+                document.getElementById("result").innerHTML ="<p style='color: blue'>Số tuổi của bạn là" + a + " .Bạn không đủ tuổi vào học lớp 10</p>"
+            }
+        }
+    </script>
+</body>
+</html>
