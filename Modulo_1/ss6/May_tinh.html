@@ -6,40 +6,33 @@
 </head>
 <body>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+    /*@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');*/
     .calculator{
         padding: 10px;
         border-radius: 1em;
         height: 380px;
         width: 400px;
         margin: auto;
-        background-color: yellowgreen;
+        background-color: lightblue;
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     }
     .display-box{
         font-family: 'Orbitron', sans-serif;
         background-color: yellowgreen;
-        border: solid black 0.5px;
         color: white;
         border-radius: 5px;
-        width: 100%;
+        width: 90%;
         height: 65%;
     }
     .button{
-        font-family: 'Orbitron', sans-serif;
-        background-color: yellowgreen;
-        border: solid black 0.5px;
+        background-color: gray;
         color: white;
         border-radius: 5px;
-        height: 65%;
+        height: 50%;
+        width: 50%;
         outline: none;
     }
-    .button:active{
-        background: #888888;
-        -webkit-box-shadow: inset 0px 0px 5px #123456;
-        -moz-box-shadow: inset 0px 0px 5px #463277;
-        box-shadow: inset 0px 0px 5px #462387;
-    }
+
 </style>
 <table class="calculator">
     <tr>
@@ -48,7 +41,7 @@
         </td>
         <td>
             <input class="button" type="button" value="C" onclick="clearScreen()"
-            style="background-color: #fb0066;" />
+            style="background-color: red;" />
         </td>
     </tr>
     <tr>
@@ -75,7 +68,7 @@
     <tr>
         <td><input class="button" type="button" value="." onclick="display('.')" /></td>
         <td><input class="button" type="button" value="0" onclick="display('0')" /></td>
-        <td><input class="button" type="button" value="=" onclick="calculate()" style="background-color: #fb0066;" /></td>
+        <td><input class="button" type="button" value="=" onclick="calculate()" style="background-color: red;" /></td>
         <td><input class="button" type="button" value="*" onclick="display('*')" /></td>
     </tr>
 </table>
