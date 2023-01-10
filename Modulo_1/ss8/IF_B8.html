@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check age</title>
+</head>
+<body>
+    <h1>Xét a chia hết cho b hay không?</h1>
+    <label for="a">Nhap vao so tuoi</label>
+    <input type="number" id="a">
+    <br>
+    <br>
+    <button onclick="check()">Kiểm tra</button>
+    <p id="result"></p>
+
+<script>
+    function check() {
+        let a = document.getElementById("a").value;
+
+        if (a >=0 && a <=120 ) {
+            document.getElementById("result").innerHTML ="<p style='color: blue'>Day la tuoi cua mọt nguoi</p>"
+        } else {
+            document.getElementById("result").innerHTML ="<p style='color: blue'>Day khong phai tuoi cua mot nguoi</p>"
+        }
+    }
+</script>
+
+</body>
+</html>

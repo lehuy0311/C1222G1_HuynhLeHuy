@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giai phuong trinh bac 2</title>
+</head>
+<body>
+    <h1>Giai phuong trinh ax2+bx+c=0</h1>
+    <label for="a">Nhap a:</label>
+    <input type="number" id="a">
+    <br>
+    <br>
+    <label for="b">Nhap b:</label>
+    <input type="number" id="b">
+    <br>
+    <br>
+    <label for="c">Nhap c:</label>
+    <input type="number" id="c">
+    <br>
+    <br>
+    <button onclick="check()">Kiểm tra</button>
+    <p id="result1"></p>
+    <p id="result2"></p>
+
+    <script>
+    function check() {
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        let c = +document.getElementById("c").value;
+        let dis = b * b - 4 * a * c;
+
+        let result1;
+        let result2;
+
+        if(dis > 0){
+            result1 = (-b + Math.sqrt(dis)) / (2 * a);
+            result2 = (-b - Math.sqrt(dis)) / (2 * a);
+
+            document.getElementById("result1").innerHTML = "<p style='color: blue'> Nghiem 1 la: " +result1+ "</p>";
+            document.getElementById("result2").innerHTML = "<p style='color: blue'> Nghiem 2 la: " +result2+ "</p>";
+        } else if (dis == 0 ){
+            result1 = result2 = -b / (2 * a);
+            document.getElementById("result1").innerHTML = "<p style='color: blue'> Nghiem 1 = Nghiem 2 = " +result1+ "</p>";
+            console.log("here")
+        } else {
+            document.getElementById("result1").innerHTML = "vo nghiem";
+        }
+
+    }
+</script>
+
+
+</body>
+</html>

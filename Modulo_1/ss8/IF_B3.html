@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dien tich hinh vuong</title>
+</head>
+<body>
+    <h1>Dien tich hinh vuong</h1>
+    <label for="a">Do dai canh a</label>
+    <input type="number" id="a">
+    <br>
+    <br>
+    <button onclick="check()">Kiểm tra</button>
+    <p id="result"></p>
+
+    <script>
+        function check() {
+            let a = document.getElementById("a").value;
+            let S = a*a;
+            document.getElementById("result").innerHTML ="<p style='color: blue'>Dien tich hinh vuong la " +S+ " (m2)</p>"
+        }
+    </script>
+
+</body>
+</html>

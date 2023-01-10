@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check_triangle</title>
+</head>
+<body>
+    <h1>Kiem tra hinh tam giac</h1>
+    <label for="a">Nhap a:</label>
+    <input type="number" id="a">
+    <br>
+    <br>
+    <label for="b">Nhap b:</label>
+    <input type="number" id="b">
+    <br>
+    <br>
+    <label for="c">Nhap c:</label>
+    <input type="number" id="c">
+    <br>
+    <br>
+    <button onclick="check()">Kiểm tra</button>
+    <p id="result"></p>
+
+<script>
+    function check() {
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        let c = +document.getElementById("c").value;
+
+        if((a + b > c) && (a + c > b) && (b + c > a)){
+            document.getElementById("result").innerHTML = "<p style='color: blue'>Day la hinh tam giac </p>";
+
+            if ((a == b) || (b == c) || (c == a)) {
+                document.getElementById("result").innerHTML = "<p style='color: blue'>Day la tam giac can</p>";
+
+                if ((a == b) && (b == c) && (c == a)) {
+                    document.getElementById("result").innerHTML = "<p style='color: blue'>Day la tam giac deu</p>";
+                }
+            }
+        } else {
+            document.getElementById("result").innerHTML = "<p style='color: blue'>Day khong phai la tam giac</p>";
+        }
+    }
+</script>
+
+</body>
+</html>
