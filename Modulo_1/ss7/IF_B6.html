@@ -18,11 +18,12 @@
     <p id="result"></p>
 
 <script>
-    function f() {
+    function check() {
         let a = document.getElementById("a").value;
         let b = document.getElementById("b").value;
-        let result = document.getElementById("result").result;
+        let result;
         result = a * (b / 100);
+        document.getElementById("result").innerHTML = "<p style='color: blue'>Tien tip la " +result+ " VND </p>";
     }
 </script>
 
