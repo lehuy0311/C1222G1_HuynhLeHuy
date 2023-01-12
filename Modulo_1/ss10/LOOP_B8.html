@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random_Number</title>
+</head>
+<body>
+    <h1>Đoán số ngẫu nhiên</h1>
+    <input type="button" value="PLAY" onclick="Play()">
+
+    <script>
+        function Play() {
+            let number = +prompt("Số bạn muốn đoán trong giới hạn lớn nhất là bao nhiêu?")
+            let numberRan = Math.random() * number;
+            console.log(numberRan);
+            let numberCheck = +prompt ("Nhập số bạn đoán");
+            let count = 0;
+            while (numberCheck !== numberRan) {
+                count++;
+                if (count == 4) {
+                    alert("You are lost!! More again!!")
+                    break;
+                } else if (numberCheck < numberRan) {
+                    alert("Số bạn đoán bé hơn so với số random. Bạn cần đáon số lớn hơn.");
+                } else {
+                    alert ("Số bạn đoán lớn hơn so với số random. Bạn cần đoán số bé hơn.")
+                }
+                numberCheck = +prompt ("Nhập số bạn đoán");
+            }
+            if (count == 4) {
+                document.write("Bạn hết số lượt đoán!")
+            } else {
+                document.write("Bạn đã đoán đúng số. Chúc mừng bạn!")
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo hình tam giác vuông</title>
+</head>
+<body>
+    <script>
+         let n = +prompt('Số hàng của tam giác là:')
+
+        for(let i=0;i<n;i++) {
+            for(let j=0;j<=i;j++) {
+                document.write(" * " );
+            }
+            document.write("<br>");
+        }
+
+        document.write("<hr>")
+
+        for(let i= n; i >0; i-- ){
+            for (let j=1 ; j<=i; j++){
+                document.write(" * ");
+            }
+            document.write("<br>")
+        }
+
+         document.write("<hr>")
+
+         for(let i = 0; i < n; i++) {
+             for(let j=0; j<i; j++) {
+                 document.write(" ");
+             }
+             for( let j=i; j < n; j++){
+                 document.write(" * ")
+             }
+
+
+         }
+
+    </script>
+</body>
+</html>

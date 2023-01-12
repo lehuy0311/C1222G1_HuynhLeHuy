@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng n số đầu tiên chia hết cho 7 </title>
+</head>
+
+<body>
+    <h1>Tổng n số đầu tiên chia hết cho 7</h1>
+    <label for="n">Nhâp vào số n:</label>
+    <input type="number" id="n">
+    <br>
+    <br>
+    <input type="button" value="Check" onclick="divisible_7()">
+
+    <script>
+
+        function divisible_7() {
+            let n;
+            n = document.getElementById("n").value;
+
+            let count = 0, S =0
+            //let dayso =""                 Xử lí nếu thích có thêm dãy số
+            for (let i=1; ; i++){
+                if(i%7==0){
+                    //dayso += i+" "        Thêm số thỏa ĐK chia hết cho 7 vào mảng
+                    //console.log(dayso)
+                    S += i
+                    count++
+                    if(count == n) break
+                }
+            }
+            //document.write(dayso+"<br>"); In ra dãy số
+            document.write("Tổng bằng "+ S);
+        }
+
+
+    </script>
+
+</body>
+</html>

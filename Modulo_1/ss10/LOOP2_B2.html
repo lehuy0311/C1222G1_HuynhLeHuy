@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa của N số nguyên dương</title>
+</head>
+<body>
+    <h2>Tính giai thừa của một số nguyên dương N</h2>
+    <label for="n">Nhập vào số nguyên dương N :</label>
+    <input type="number" id="n">
+    <br>
+    <br>
+    <button onclick="Check()">Calculator</button>
+    <p id="result"></p>
+
+    <script>
+        function Check() {
+            let n = +document.getElementById("n").value;
+            let P = 1;
+            for (let i =1; i <= n; i++){
+                P = P*i;
+            }
+            document.getElementById("result").innerHTML ="<p style='color: blue'>Giai thừa của " +n+ " là " +P+ "</p>";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In hình chữ nhật</title>
+
+</head>
+<body>
+    <script>
+        let m = +prompt('Chiều dài của hình chữ nhật là: ')
+        let n = +prompt('Chiều rộng của hình chữ nhật: ')
+
+        for(let i = 1; i <= n; i++) {
+            for(let k = 1 ; k <= m; k++){
+                if(i == 1 || k == 1 || i == n || k == m){
+                    document.write("*")
+                }
+                else{
+                    document.write(" ");
+                }
+            }
+            document.write("<br>");
+        // In ra man hinh hcn chieu rong = n va chieu dai = m
+        }
+
+    </script>
+</body>
+</html>

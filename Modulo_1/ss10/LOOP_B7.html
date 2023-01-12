@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FizzBuzz</title>
+</head>
+<body>
+    <h1>Fizz - Buzz - Ohyeah! Mai nữa thôi là nghĩ tết!!</h1>
+    <input type="button" value="Check" onclick="Check()">
+
+    <script>
+        function Check() {
+            for(let i =1; i<=100; i++){
+                document.write(i+ "<br>")
+                if (i% 3 ==0 && i%5 == 0){
+                    document.write("FizzBuzz" +"<br>")
+                }else if (i%3 == 0) {
+                    document.write("Fizz" + "<br>")
+                }else if (i%5 ==0)
+                {
+                    document.write("Buzz" + "<br>")
+                }
+            }
+        }
+    </script>
+</body>
+</html>
