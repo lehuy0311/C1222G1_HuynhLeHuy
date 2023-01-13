@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array_Basic</title>
+</head>
+<body>
+
+<!--    <p id="ex_1"></p>-->
+<!--    <script>-->
+<!--        document.getElementById("ex_1").innerHTML = "<p style='color: blue'> Nối các phần tử trong mảng thành chuỗi </p>";-->
+<!--        let Arr = ["Black", "White", "Red", "Pupil"];-->
+<!--        document.write(Arr+"<br>");-->
+<!--        document.write(Arr.toString());-->
+<!--        document.write("<hr>")-->
+<!--    </script>-->
+
+<!--    <p id="ex_2"></p>-->
+<!--    <script>-->
+<!--        document.getElementById("ex_2").innerHTML = "<p style='color: blue'> Thêm dấu (-) vào giữa 2 số chẵn</p>";-->
+<!--        let num= prompt();-->
+<!--        let str = num.toString();-->
+<!--        let result = [str[0]];-->
+
+<!--        for(let x=1; x<str.length; x++)-->
+<!--        {-->
+<!--            if((str[x-1]%2 === 0)&&(str[x]%2 === 0))-->
+<!--            {-->
+<!--                result.push('-', str[x]);-->
+<!--            }-->
+<!--            else-->
+<!--            {-->
+<!--                result.push(str[x]);-->
+<!--            }-->
+<!--        }-->
+<!--        document.write(result.join(''));-->
+<!--        document.write("<hr>")-->
+<!--    </script>-->
+
+    <p id="ex_3"></p>
+    <script>
+        document.getElementById("ex_3").innerHTML = "<p style='color: blue'> Chuyển đổi HOA-THƯỜNG</p>";
+
+        let string = prompt();
+        let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+        let result = [];
+
+        for(let x=0; x<string.length; x++)
+        {
+            if(UPPER.indexOf(str[x]) !== -1)
+            {
+                result.push(str[x].toLowerCase());
+            }
+            else if(LOWER.indexOf(str[x]) !== -1)
+            {
+                result.push(str[x].toUpperCase());
+            }
+            else
+            {
+                result.push(str[x]);
+            }
+        }
+        document.write(result.join(''));
+    </script>
+</body>
+</html>
