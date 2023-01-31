@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra 2 chuỗi</title>
+
+</head>
+<body>
+<script>
+        let array1 = prompt("Nhập chuỗi 1")
+        let array2 = prompt("Nhập chuỗi 2")
+        for (let i=0; i < array1.length ; i++){
+            for (let j=0; j < array2.length ; j++){
+                if (array1[i] == array2[j]){
+                    sosanh = true
+                }else{
+                    sosanh = false
+                }
+            }
+        }
+        if (sosanh == false){
+            document.write("2 chuỗi không giống nhau<br>")
+        }else{
+            document.write("2 chuỗi giống nhau<br>")
+        }
+
+
+
+</script>
+
+</body>
+</html>

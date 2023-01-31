@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 9</title>
+
+</head>
+<body>
+<script>
+    let array1 = [];
+    let array2 = [];
+    let array3 = [];
+
+    for (let i=0; i<2;i++){
+        let a = +prompt("Nhap vao mang a")
+        array1.push(a)
+    }
+
+    for (let j=0; j<2;j++){
+        let b = +prompt("Nhap vao mang b")
+        array1.push(b)
+    }
+
+    //array3 = [].concat(array1, array2)
+    array3 = array1 + array2;
+    document.write("Array 3 = ["+array3+"]<br>")
+</script>
+
+</body>
+</html>
