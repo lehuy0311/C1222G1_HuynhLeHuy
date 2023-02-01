@@ -6,10 +6,21 @@
 </head>
 <body>
 <script>
-    let array = prompt("Nhập chuỗi 1")
+    let count = 0;
+    let Array = [];
+    let m = prompt("số lượng phần tử mảng mà bạn muốn:");
 
-    
+    while (count < m) {
+        let n = prompt("nhập giá trị:");
+        Array.push(n);
+        count++;
+    }
+    for (let i = 0; i < Array.length; i++) {
+        if (Array[i] === '-') {
+            Array[i] = '_';
+        }
+    }
+    document.write("Array_New = [" +Array +"]<br>")
 </script>
-
 </body>
 </html>
