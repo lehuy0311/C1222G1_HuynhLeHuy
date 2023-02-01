@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>Kiểm tra số nguyên tố</title>
+</head>
+<body>
+<script>
+    function test_prime(n)
+    {
+        if (n===1)
+        {
+            alert(n + " không phải là số nguyên tố")
+        }
+        else if(n === 2)
+        {
+            alert(n + " là số nguyên tố")
+        }else
+        {
+            for(let x = 2; x < n; x++)
+            {
+                if(n % x === 0)
+                {
+                    alert(n + " không phải là số nguyên tố")
+                    break;
+                }
+            }
+            alert(n + " là số nguyên tố")
+        }
+    }
+
+    let n = prompt("Nhập vào số nguyên tố cần kiểm tra: ")
+    test_prime(n);
+
+</script>
+
+</body>
+</html>

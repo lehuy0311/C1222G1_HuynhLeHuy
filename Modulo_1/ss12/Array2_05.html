@@ -7,21 +7,22 @@
 </head>
 <body>
 <script>
-        let array1 = prompt("Nhập chuỗi 1")
-        let array2 = prompt("Nhập chuỗi 2")
+        let array1 = prompt("Nhập chuỗi 1");
+        let array2 = prompt("Nhập chuỗi 2");
+        let flag = true;
         for (let i=0; i < array1.length ; i++){
             for (let j=0; j < array2.length ; j++){
                 if (array1[i] == array2[j]){
-                    sosanh = true
+                    flag = true;
                 }else{
-                    sosanh = false
+                    flag = false;
                 }
             }
         }
         if (sosanh == false){
-            document.write("2 chuỗi không giống nhau<br>")
+            document.write("2 chuỗi không giống nhau<br>");
         }else{
-            document.write("2 chuỗi giống nhau<br>")
+            document.write("2 chuỗi giống nhau<br>");
         }
 </script>
 
