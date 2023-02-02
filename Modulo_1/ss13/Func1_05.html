@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Find Start</title>
 </head>
 <body>
+<script>
+    let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let star = prompt("Nhập vào tên ngôi sao:");
+
+    function findStar() {
+        for (let i = 0; i < arr1.length; i++) {
+            if (star == arr1[i]) {
+                return alert(arr2[i]);
+            }
+        }
+        return alert("Không thấy tên chòm sao bạn cần tìm");
+    }
+
+    findStar(star);
+</script>
 
 </body>
 </html>

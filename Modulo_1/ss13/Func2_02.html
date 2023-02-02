@@ -5,6 +5,22 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    let r = +prompt("nhập vào bán kính hình tròn");
+    
+    function ChuVi(r) {
+        let c = 2*r*Math.PI;
+        return alert("Chu vi hình tròn là: " + c  );
+    }
+
+    function DienTich(r) {
+        let s = r*r*Math.PI;
+        return alert("Diện tích hình tròn là: " + s  );
+    }
+
+    ChuVi(r);
+    DienTich(r);
+</script>
 
 </body>
 </html>
