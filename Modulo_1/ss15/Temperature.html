@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+<script>
+    class Temperature{
+
+        Celsius;
+        constructor(Celsius) {
+            this.Celsius = Celsius;
+        }
+
+        convertF(){
+            return 9/5*this.Celsius +32;
+        }
+
+        convertK(){
+            return this.Celsius +273.15;
+        }
+
+        setCelsius(newCelsius){
+            if (newCelsius < -273) {
+                alert("Vui lòng nhập nhiệt độ lớn hơn -273 độ C.End Program");
+            }else {
+                this.Celsius = newCelsius;
+            }
+        }
+    }
+
+    let x = +prompt("Nhập vào độ C mà bạn muốn chuyển đổi");
+    let temperature = new Temperature(x);
+    let convertF = temperature.convertF();
+    let convertK = temperature.convertK();
+    temperature.setCelsius(x);
+
+    document.write("Nhiệt độ F là: " + convertF + "<br>"
+                    + "Nhiệt độ K là: " + convertK);
+</script>
+
+</body>
+</html>
