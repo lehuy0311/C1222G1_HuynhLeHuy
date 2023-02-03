@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bai 9</title>
 </head>
 <body>
+<script>
+    let arr = ['h', 'u', 'y', 'n', 'h', 'l', 'e', 'h', 'u', 'y', '4','4'];
+    let a = prompt("nhập ký tự bạn cần tìm: ");
+    let flag = -1;
 
+    function checkArr(arr, kt) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (a === arr[i]) {
+                flag = 1;
+                count++;
+            }
+        }
+        if (flag == 1) {
+            return count;
+        } else {
+            return flag;
+        }
+    }
+    alert(checkArr(arr, a));
+</script>
 </body>
 </html>

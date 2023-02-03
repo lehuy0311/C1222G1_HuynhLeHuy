@@ -2,18 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Reverse</title>
 </head>
 <body>
 <script>
-    let count = 0;
-    let Array = [];
-    let m = prompt("số lượng phần tử mảng mà bạn muốn:");
+    let arr = [];
+    let m = +prompt("số lượng phần tử mảng mà bạn muốn:");
+    let new_arr = [];
 
-    while (count < m) {
-        let n = prompt("nhập giá trị:");
-        Array.push(n);
-        count++;
+    for (let i = 0; i < m; i++) {
+        let n = +prompt("nhập giá trị:");
+        arr.push(n);
+    }
+
+    function reverse() {
+        for (let i = (arr.length - 1); i >= 0; i--) {
+            new_arr.push(arr[i]);
+        }
+        return new_arr;
+    }
+    alert(reverse(new_arr));
 </script>
 
 </body>
