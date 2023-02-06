@@ -2,53 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Rectangle</title>
+    <title>Title</title>
 </head>
 <body>
+<canvas id="myCanvas" width="100%" height="100%"></canvas>
+<br>
 <script>
-    class Rectangle{
-        width;
-        height;
-        constructor(width, height) {
-            this.width = width;
+    let canvas = document.getElementById("myCanvas");
+    let x = +prompt("nhập chiều dài ");
+    let y = +prompt("nhập chiều rộng: ");
+
+    class Rectangle {
+        constructor(height, width) {
             this.height = height;
-        }
-
-        getWidth() {
-            return this.width;
-        }
-
-        getHeight() {
-            return this.height;
-        }
-
-        setWidth() {
             this.width = width;
-        }
-
-        setHeight() {
-            this.height = height;
         }
 
         getArea() {
-            return this.width * this.height;
+            return this.height * this.width;
         }
 
         getPerimeter() {
-            return (this.width + this.height) * 2;
+            return (this.height + this.width) * 2;
         }
-    }
+    };
 
-    let x = +prompt("Nhập vào chiều rộng của hình chữ nhật: ");
-    let y = +prompt("Nhập vào chiều dài của hình chữ nhật: ");
-    let rectangle = new Rectangle(x,y);
-    let width = rectangle.setWidth(x);
-    let height = rectangle.setHeight(y);
-    alert(rectangle.getArea(x,y));
-    alert(rectangle.getPerimeter(x,y));
+    let rectangle = new Rectangle(x, y);
+    let ctx = canvas.getContext('2d');
+    ctx.beginPath();
+    ctx.rect(10, 10, rectangle.height, rectangle.width);
+    ctx.stroke();
 
-
-
+    document.write("Diện tích hình chữ nhật: " + rectangle.getArea() + "<br>");
+    document.write("Chu vi hình chữ nhật: " + rectangle.getPerimeter());
 </script>
 </body>
 </html>
