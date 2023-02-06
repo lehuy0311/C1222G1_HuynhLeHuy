@@ -8,7 +8,7 @@
 <script>
     let arr = [];
     let m = +prompt("số lượng phần tử mảng mà bạn muốn:");
-    let new_arr = [];
+    let newArr = [];
 
     for (let i = 0; i < m; i++) {
         let n = +prompt("nhập giá trị:");
@@ -17,11 +17,11 @@
 
     function reverse() {
         for (let i = (arr.length - 1); i >= 0; i--) {
-            new_arr.push(arr[i]);
+            newArr.push(arr[i]);
         }
-        return new_arr;
+        return newArr;
     }
-    alert(reverse(new_arr));
+    alert(reverse(newArr));
 </script>
 
 </body>
