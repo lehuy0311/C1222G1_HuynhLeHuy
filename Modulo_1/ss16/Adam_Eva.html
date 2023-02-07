@@ -10,16 +10,16 @@
         constructor(weight) {
             this.weight = weight;
         }
-        getWeight(){
-            return this.weight;
+        getWeight() {
+            return this.weight;//2
         }
 
-        setWeight(newWeight){
-            this.weight = newWeight;
-        }
+        setWeight(weight) {
+            this.weight = weight;
+        };
 
-        isEmpty(){
-            if (this.weight <=0 ){
+        isEmpty() {
+            if(this.weight <= 0){
                 return true;
             }else {
                 return false;
@@ -27,29 +27,26 @@
         }
 
         decreaseApple(){
-            if (this,this.isEmpty()){
-                alert("Apple End!");
+            if(this.isEmpty()){
+                alert("Táo đã hết rồi");
             }else {
-                this.weight --;
+                this.weight--;
             }
         }
     }
 
     class Human{
-        constructor(name, gender, weight) {
+        constructor(name,gender,weight) {
             this.name = name;
             this.gender = gender;
-            this.weight =weight;
+            this.weight = weight;
         }
-
         getName(){
             return this.name;
         }
-
         setName(name){
             this.name = name;
         }
-
         getWeight(){
             return this.weight;
         }
@@ -58,23 +55,22 @@
             if(this.gender == 1){
                 return true;
             }else {
-                return  false;
+                return false;
             }
         }
-
         getGender(){
-            if (this.isMale()){
+            if(this.isMale()){
                 return "Male";
             }else {
                 return "Female";
             }
         }
 
-        setWeight(newWeight){
-            this.weight = newWeight;
+        setWeight(weight){
+            this.weight = weight;
         }
 
-        say(string){
+        say(string) {
             console.log(string);
         }
 
@@ -83,29 +79,31 @@
         }
 
         eat(apple){
-            if (apple.getWeight() >0){
-                apple.decreaseApple();
-                this.weight++;
+            if(apple.getWeight() > 0){
+                apple.decreaseApple(); //1
+                this.weight++; //66
             }else {
-                alert("Tao end!")
+                alert("Táo đã hết");
             }
         }
 
         getInfo(human){
             alert(human.name + " " +human.weight + " " +human.getGender());
         }
-
-        let adam = new Human("adam", 1, 65);
-        let eva = new Human("eva", 2, 55);
-        let apple_1 = new Apple(10);
+    }
 
 
-// adam.checkApple(apple_1)
-        adam.say("I am Adam" + "<br>");
-        eva.say("I am Eva" + "<br>");
+    let adam = new Human("adam", 1, 65);
+    let eva = new Human("eva", 2, 55);
+    let apple_1 = new Apple(10);
 
 
-        while (apple_1.isEmpty() !== true) {
+    // adam.checkApple(apple_1)
+    adam.say("I am Adam" + "<br>");
+    eva.say("I am Eva" + "<br>");
+
+
+    while (apple_1.isEmpty() !== true) {
         document.write("Adam ăn táo" + "<br>");
         adam.eat(apple_1);
 
@@ -120,9 +118,7 @@
 
         document.write("Quả táo còn: " + "<br>");
         document.write(apple_1.getWeight() + " đơn vị" + "<br>");
-        document.write( "Cân nặng là: " + eva.getWeight() + " đơn vị" + "<br>");
-    }
-
+        document.write( "Cân nặng của Eva là: " + eva.getWeight() + " đơn vị" + "<br>");
     }
 
 </script>
