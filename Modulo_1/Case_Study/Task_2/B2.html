@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vẽ hình tam giác cân </title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập chiều cao tam giác : ");
+    for (let i = 0; i < n; i++) {
+        for (let j = n; j > i; j--) {
+            document.write("&ensp;");
+        }
+        for (let k = 0; k <= i * 2; k++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+</script>
+
+</body>
+</html>

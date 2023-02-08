@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vẽ tam giác cân rỗng ruột</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập chiều cao tam giác : ");
+    for (let i = 0; i < n; i++) {
+        for (let j = n; j > i; j--) {
+            document.write("&ensp;");
+        }
+        for (let k = 0; k <= i * 2; k++) {
+            if (k===0 || i===n-1 || k===i*2){
+                document.write("*");
+            }else {
+                document.write("&ensp;");
+            }
+        }
+        document.write("<br>");
+    }
+
+</script>
+</body>
+</html>

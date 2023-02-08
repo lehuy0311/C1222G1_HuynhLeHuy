@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra nguyên âm</title>
+</head>
+<body>
+<h1>Kiểm tra nguyên âm</h1>
+<label for="char">Nhập vào kí tự cần kiểm tra: </label>
+<input type="" id="char">
+<br>
+<br>
+<button onclick="check()">Kiểm tra</button>
+<p id="check"></p>
+
+<script>
+    function check() {
+        let char = document.getElementById("char").value;
+
+        switch (char) {
+            case 'a':
+            case 'i':
+            case 'u':
+            case 'e':
+            case 'o':
+            case 'A':
+            case 'I':
+            case 'U':
+            case 'E':
+            case 'O':
+                document.getElementById("check").innerHTML = "<p style='color: blue'> Đây là ký tự nguyên âm </p>";
+                break;
+            default: {
+                document.getElementById("check").innerHTML = "<p style='color: blue'> Đây không phải là ký tự nguyên âm </p>";
+                break;
+            }
+        }
+    }
+</script>
+</body>
+</html>

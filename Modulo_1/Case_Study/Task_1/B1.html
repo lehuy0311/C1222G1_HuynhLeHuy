@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salary</title>
+</head>
+<body>
+<h1>Salary</h1>
+<label for="a">Nhập vào số lương: </label>
+<input type="number" id="a">
+<br>
+<br>
+<button onclick="check()">Kiểm tra</button>
+<p id="salary"></p>
+<p id="tax"></p>
+
+<script>
+    function check() {
+        let a = document.getElementById("a").value;
+
+        if (a >= 15000000) {
+            let b = a * 20 / 100;
+            let c = a - b;
+            document.getElementById("tax").innerHTML = "<p style='color: blue'>Số thuế phải trả là: " + b + " VND.</p>";
+            document.getElementById("salary").innerHTML = "<p style='color: blue'>Số lương thục tế có thể nhận là: " + c + "VND .</p>";
+        } else if (a < 15000000 && a > 7000000) {
+            let d = a * 10 / 100;
+            let e = a - d;
+            document.getElementById("tax").innerHTML = "<p style='color: blue'>Số thuế phải trả là: " + d + " VND.</p>";
+            document.getElementById("salary").innerHTML = "<p style='color: blue'>Số lương thục tế có thể nhận là: " + e + " VND.</p>";
+        } else if (a < 7000000) {
+            let f = a * 5 / 100;
+            let g = a - f;
+            document.getElementById("tax").innerHTML = "<p style='color: blue'>Số thuế phải trả là: " + f + " VND.</p>";
+            document.getElementById("salary").innerHTML = "<p style='color: blue'>Số lương thục tế có thể nhận là: " + g + " VND.</p>";
+
+        }
+    }
+</script>
+</body>
+</html>
