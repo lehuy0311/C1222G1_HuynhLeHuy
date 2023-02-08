@@ -2,27 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 </head>
 <body>
-
-<img src="https://www.w3schools.com/js/pic_bulboff.gif" alt="The bulb" id="myImage" onclick="changeImage()" />
-
-<p>Click to <b>Turn on / Turn off</b></p>
-
 <script>
-    function changeImage() {
-        let image = document.getElementById("myImage");
+    class ElectricLamp {
+        constructor(status) {
+            this.status = status;
+        };
 
-        if (image.src.match("bulbon")) {
-            image.src = "pic_bulboff.gif";
-        } else {
-            image.src = "pic_bulbon.gif";
-        }
-    }
+        getStatus() {
+            return this.status;
+        };
+    };
 
+    class SwitchButton {
+        constructor(lamp, status) {
+            this.status = status;
+            this.lamp = lamp;
+        };
+
+        getLamp() {
+            console.log(this.lamp);
+            return this.lamp;
+        };
+
+        switchOff() {
+            this.lamp.status = false;
+            return this.status = false;
+        };
+
+        switchOn() {
+            this.lamp.status = true;
+            return this.status = true;
+        };
+    };
+
+    let electricLamp = new ElectricLamp(true);
+    let switchButton = new SwitchButton(electricLamp, false);
+
+    document.writeln(switchButton.switchOff());
+    document.writeln(electricLamp.getStatus());
+    document.writeln(switchButton.switchOn());
+    document.writeln(electricLamp.getStatus());
 </script>
+
 </body>
 </html>
