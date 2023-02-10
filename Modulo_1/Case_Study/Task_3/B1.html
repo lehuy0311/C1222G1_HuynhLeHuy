@@ -9,16 +9,18 @@
     let n = +prompt("Nhập độ dài của mảng:");
     let arr =[];
     for (let i =0; i <n ; i++){
-        arr[i] =+prompt("nhập vào phần tử");
+        arr[i] = +prompt("nhập vào phần tử");
     }
-    console.log();
+    document.write("arr = [" +arr+ "]");
+    document.write("<br>")
+
     let arr1 =[];
     let sum =0;
     for (let j=0; j<arr.length;j++){
         sum = sum + arr[j];
         arr1.push(sum);
     }
-    document.write(arr1);
+    document.write("arr1 = [" +arr1+ "]");
 </script>
 </body>
 </html>

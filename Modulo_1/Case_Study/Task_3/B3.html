@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Max Fraction</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập độ dài mảng A: ");
+    let arrA = [];
+    for (let i = 0; i < n; i++) {
+        arrA[i] = +prompt("Nhập phần tử thứ: " +i);
+    }
+    document.write("A= [" +arrA+ "]");
+    document.write("<br>")
+
+    let m = +prompt("Nhập độ dài mảng B: ");
+    let arrB = []
+    for (let j = 0; j < m; j++) {
+        arrB[j] = +prompt("Nhập phần tử thứ: " +j);
+    }
+    document.write("B= [" +arrB+ "]");
+    document.write("<br>")
+
+    let max = arrA[0]/arrB[0];
+    let index;
+    for (let x =1; x <arrA.length; x++){
+        if (arrA[x]/arrB[x] > max){
+            max = arrA[x]/arrB[x];
+            index = x;
+        }
+    }
+
+    document.write("Max= " + max +"<br>");
+    document.write("Chỉ số là: " +index)
+</script>
+
+</body>
+</html>
