@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Task 3 Exercise 4</title>
+        </head>
+<body>
+<script>
+    let price;
+    let order;
+    let subQuantity = 0;
+    let totalQuantity = 0;
+    let total = 0;
+
+    do {
+        order = +prompt(` Select a number to order your drink or press 7 to finish your order:
+    1 - Coffee
+    2 - Orange Juice
+    3 - Carrot Juice
+    4 - Tomato Juice
+    5 - Water
+    6 - Coconut Water
+    7 - Finish your order!
+    `);
+
+        switch (order) {
+            case 1:
+                price = 10000;
+                subQuantity = +prompt(`Your drink costs ${price} VND. How many would you like to order:`)
+                totalQuantity += subQuantity
+                total += price * subQuantity
+                break;
+            case 2:
+                price = 20000;
+                subQuantity = +prompt(`Your drink costs ${price} VND. How many would you like to order:`)
+                totalQuantity += subQuantity
+                total += price * subQuantity
+                break;
+            case 3:
+                price = 15000;
+                subQuantity = +prompt(`Your drink costs ${price} VND. How many would you like to order:`)
+                totalQuantity += subQuantity
+                total += price * subQuantity
+                break;
+            case 4:
+                price = 15000;
+                subQuantity = +prompt(`Your drink costs ${price} VND. How many would you like to order:`)
+                totalQuantity += subQuantity
+                total += price * subQuantity
+                break;
+            case 5:
+                price = 5000;
+                subQuantity = +prompt(`Your drink costs ${price} VND. How many would you like to order:`)
+                totalQuantity += subQuantity
+                total += price * subQuantity
+                break;
+            case 6:
+                price = 20000;
+                subQuantity = +prompt(`Your drink costs ${price} VND. How many would you like to order:`)
+                totalQuantity += subQuantity
+                total += price * subQuantity
+                break;
+            case 7:
+                alert("We are processing your order...")
+                break;
+            default :
+                alert("There is no drink that matches your order!");
+        }
+    } while (order !== 7);
+
+    if (totalQuantity !== 0) {
+        alert("Total (" + totalQuantity + " items): " + total + " VND. Thank you!");
+    } else alert("Sorry! No order was made!");
+
+</script>
+</body>
+</html></title>
+</head>
+<body>
+
+</body>
+</html>

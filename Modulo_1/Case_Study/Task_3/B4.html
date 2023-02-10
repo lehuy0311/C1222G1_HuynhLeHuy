@@ -5,6 +5,69 @@
     <title>Title</title>
 </head>
 <body>
+<table border="1">
+    <tr>
+        <th>STT</th>
+        <th>Menu</th>
+        <th>Giá</th>
+        <th>Số lượng</th>
+    </tr>
+    <tr>
+        <td>1.</td>
+        <td>Cafe</td>
+        <td>12000</td>
+        <td><input type="number" id="cafe"></td>
+    </tr>
+    <tr>
+        <td>2.</td>
+        <td>Cam Vắt</td>
+        <td>15000</td>
+        <td><input type="number" id="cam"></td>
+    </tr>
+    <tr>
+        <td>3.</td>
+        <td>Nước ép cà rốt</td>
+        <td>15000</td>
+        <td><input type="number" id="carot"></td>
+    </tr>
+    <tr>
+        <td>4.</td>
+        <td>Nước ép cà chua</td>
+        <td>15000</td>
+        <td><input type="number" id="cachua"></td>
+    </tr>
+    <tr>
+        <td>5.</td>
+        <td>Nước lọc</td>
+        <td>10000</td>
+        <td><input type="number" id="nuocloc"></td>
+    </tr>
+    <tr>
+        <td>6.</td>
+        <td>Nước dừa</td>
+        <td>20000</td>
+        <td><input type="number" id="nuocdua"></td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="showResult()">Tổng tiền</button>
+        </td>
+        <td colspan="3" id="result"></td>
+    </tr>
+</table>
+<script>
+    function showResult() {
+        let result = document.getElementById('result');
+        let cafe = document.getElementById('cafe').value;
+        let cam = document.getElementById('cam').value;
+        let carot = document.getElementById('carot').value;
+        let cachua = document.getElementById('cachua').value;
+        let nuocloc = document.getElementById('nuocloc').value;
+        let nuocdua = document.getElementById('nuocdua').value;
+        let total = cafe * 12000 + cam * 15000 + carot * 15000 + cachua * 15000 + nuocloc * 10000 + nuocdua * 20000;
+        result.innerHTML = total + ' VNĐ';
+    }
 
+</script>
 </body>
 </html>
