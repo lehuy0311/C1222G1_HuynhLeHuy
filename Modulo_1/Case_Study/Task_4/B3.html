@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // làm theo cách của anh Trí
+
+    let c = prompt("nhap chuoi a");
+    let d = prompt("nhap chuoi b");
+    let a = c.split('');
+    let b = d.split('');
+    let e = [];
+
+
+    for (let i = 0; i < a.length; i++) {
+        for (let j = 0; j < b.length; j++) {
+            if (a[i] === b[j]) {
+                e.push(b[j]);
+                b.splice(j, 1);
+                a.splice(i, 1);
+                j--;
+                i--;
+            }
+        }
+
+    }
+    document.write(e + "<br>");
+    for (let i = 0; i < e.length; i++) {
+        let count = 1;
+        for (let j = i + 1; j < e.length; j++) {
+            if (e[i] === e[j]) {
+                count++;
+                e.splice(j, 1);
+                j--;
+            }
+        }
+        document.write(count + e[i]);
+    }
+
+
+</script>
+</body>
+</html>

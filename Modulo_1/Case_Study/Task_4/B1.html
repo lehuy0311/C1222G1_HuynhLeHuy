@@ -2,85 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <title>Task 3 Exercise 4</title>
-        </head>
-<body>
-<script>
-    let price;
-    let order;
-    let subQuantity = 0;
-    let totalQuantity = 0;
-    let total = 0;
-
-    do {
-        order = +prompt(` Select a number to order your drink or press 7 to finish your order:
-    1 - Coffee
-    2 - Orange Juice
-    3 - Carrot Juice
-    4 - Tomato Juice
-    5 - Water
-    6 - Coconut Water
-    7 - Finish your order!
-    `);
-
-        switch (order) {
-            case 1:
-                price = 10000;
-                subQuantity = +prompt(`Your drink costs ${price} VND. How many would you like to order:`)
-                totalQuantity += subQuantity
-                total += price * subQuantity
-                break;
-            case 2:
-                price = 20000;
-                subQuantity = +prompt(`Your drink costs ${price} VND. How many would you like to order:`)
-                totalQuantity += subQuantity
-                total += price * subQuantity
-                break;
-            case 3:
-                price = 15000;
-                subQuantity = +prompt(`Your drink costs ${price} VND. How many would you like to order:`)
-                totalQuantity += subQuantity
-                total += price * subQuantity
-                break;
-            case 4:
-                price = 15000;
-                subQuantity = +prompt(`Your drink costs ${price} VND. How many would you like to order:`)
-                totalQuantity += subQuantity
-                total += price * subQuantity
-                break;
-            case 5:
-                price = 5000;
-                subQuantity = +prompt(`Your drink costs ${price} VND. How many would you like to order:`)
-                totalQuantity += subQuantity
-                total += price * subQuantity
-                break;
-            case 6:
-                price = 20000;
-                subQuantity = +prompt(`Your drink costs ${price} VND. How many would you like to order:`)
-                totalQuantity += subQuantity
-                total += price * subQuantity
-                break;
-            case 7:
-                alert("We are processing your order...")
-                break;
-            default :
-                alert("There is no drink that matches your order!");
-        }
-    } while (order !== 7);
-
-    if (totalQuantity !== 0) {
-        alert("Total (" + totalQuantity + " items): " + total + " VND. Thank you!");
-    } else alert("Sorry! No order was made!");
-
-</script>
-</body>
-</html></title>
+    <title>Chuyển đổi hoa thường</title>
 </head>
 <body>
+<!--<script>-->
+<!--    function findString(arr) {-->
+<!--        let max = arr[0];-->
+<!--        for (let i = 0; i < arr.length; i++) {-->
+<!--            if (arr[i] > max) {-->
+<!--                max = arr[i];-->
+<!--            }-->
+<!--        }-->
+<!--        return max;-->
+<!--    }-->
+
+<!--    function checkString(str) {-->
+<!--        let a = str.toLowerCase().split(" ");-->
+<!--        for (let j = 0; j < a.length; j++) {-->
+<!--            a[j] = a[j].charAt(0).toUpperCase() + a[j].substring(1);-->
+<!--        }-->
+<!--        return a.join(' ');-->
+<!--    }-->
+
+<!--    let a = prompt("Nhập chuỗi bạn muốn chuyển đổi: ");-->
+<!--    document.write("Chuỗi từ bạn vừa nhập sau khi chuyển đổi: " + checkString(a) + '<br>');-->
+<!--    let array = CheckString(a).split(' ');-->
+<!--    document.write('Chữ dài nhất trong chuỗi là: ' + findString(array));-->
+<!--</script>-->
+
+<script>
+    function normal() {
+        let s = document.getElementById("txtS").value;
+        arr = s.split(" "); // tách chuỗi vào mảng theo khoảng trắng
+        let i, kq="", tmp;
+        for (let i =0; i< arr.length; i++){
+            // duyệt từ đầu mảng
+            tmp = arr[i].trim().toLowerCase(); //
+            // xóa khaorng trắng trước sau từ, chuyển về chữ thường
+            if (tmp != ""){
+                tmp = tmp.substr(0,1).toUpperCase() + tmp.substr(1);
+                kq += tmp + "";
+            }
+        }
+        document.getElementById("txtS").value = kq.trim();
+        // xóa khoảng trắng cuối chuỗi
+    }
+</script>
+
+<table>
+    <tr>
+        <td>Chuỗi ban đầu</td>
+        <td><input type="text" id ="txtS" size="50"></td>
+    </tr>
+
+    <tr>
+        <td><button onclick="normal()"> Chuẩn hóa chuỗi</button></td>
+    </tr>
+</table>
 
 </body>
 </html>

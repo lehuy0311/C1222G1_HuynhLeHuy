@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bìa 2</title>
+</head>
+<body>
+<script>
+    // Tham khảo cách làm theo bài anh Trí
+
+    let a = prompt("nhap sau ky tu");
+    let b = a.split('');
+    for (let i = 0; i < b.length; i++) {
+        for (let j = i + 1; j < b.length; j++) {
+            if (b[i] == b[j]) {
+                b.splice(j, 1);
+                j--;
+            }
+        }
+    }
+    alert(b);
+    alert(b.length);
+</script>
+</body>
+</html>
