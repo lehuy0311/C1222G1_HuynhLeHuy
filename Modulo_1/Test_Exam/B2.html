@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OOP</title>
+</head>
+<body>
+<script>
+    function checkString(string) {
+        let arr = string.toLowerCase().split(" ");
+
+        if (arr.length <2){
+            alert("Chuỗi này chỉ được tính có 1 từ")
+        }else {
+            for (let i =0 ; i< arr.length; i++){
+                arr[i] = arr[i].charAt(0).toUpperCase();
+            }
+        }            return arr.join("");
+
+    }
+
+    let string = prompt("Nhập vào 1 chuỗi kí tự");
+    document.write(checkString(string));
+</script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="addAccount()">Thêm Tài Khoản</button>
+<button onclick="editAccount()">Chỉnh Sửa</button>
+<button onclick="deleteAccount()">Xóa Tài Khoản</button>
+<div id="result"></div>
+<script>
+    class Account {
+        constructor(accountNumber, name, bankName, money) {
+            this.accountNumber = accountNumber;
+            this.name = name;
+            this.bankName = bankName;
+            this.money = money;
+        }
+
+        getAccountNumber() {
+            return this.accountNumber;
+        }
+
+        setAccountNumber(accountNumber) {
+            this.accountNumber = accountNumber;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        getBankName() {
+            return this.bankName;
+        }
+
+        setBankName(bankName) {
+            this.bankName = bankName;
+        }
+
+        getMoney() {
+            return this.money;
+        }
+
+        setMoney(money) {
+            this.money = money;
+        }
+    }
+
+    let account = new Account('19037', 'Nguyễn Danh', 'TechcomBank', 100);
+    let array = [account];
+    displayAccount(array);
+
+    function displayAccount(array) {
+        let table = '<table border="1">\n'
+            + '<tr>\n'
+            + '<th>Số tài khoản</th>\n'
+            + '<th>Tên Chủ Tài Khoản</th>\n'
+            + '<th>Tên Ngân Hàng </th>\n'
+            + '<th>Số Dư</th>\n'
+        '</tr>\n';
+        '</table>';
+        for (let i = 0; i < array.length; i++) {
+            table += '<tr>\n'
+                + '<td>' + array[i].getAccountNumber() + '</td>\n'
+                + '<td>' + array[i].getName() + '</td>\n'
+                + '<td>' + array[i].getBankName() + '</td>\n'
+                + '<td>' + array[i].getMoney() + '</td>\n'
+            '</tr>\n'
+        }
+        document.getElementById('result').innerHTML = table;
+    }
+
+    function addAccount() {
+        let accountNumber = prompt("Nhập số tài khoản");
+        let name = prompt("Nhập tên chủ tài khoản");
+        let bankName = prompt("Nhập tên ngân hàng ");
+        let money = +prompt("Nhập số tiền");
+        let account1 = new Account(accountNumber, name, bankName, money);
+        array.push(account1);
+        displayAccount(array);
+
+    }
+
+    function editAccount() {
+        let accountNumber = prompt("Nhập số tài khoản cần chỉnh sửa ");
+        for (let i = 0; i < array.length; i++) {
+            if (accountNumber == array[i].getAccountNumber()) {
+                let name = prompt("Nhập tên");
+                let bankName = prompt("Nhập tên ngân hàng ");
+                let money;
+                do{
+                    money = +prompt("Nhập số dư");
+                    if(isNaN(money)){
+                        alert("Mời nhập số")
+                    }
+                }while (true)
+                array[i].setName(name);
+                array[i].setBankName(bankName);
+                array[i].setMoney(money);
+            }
+        }
+        displayAccount(array);
+    }
+
+    function deleteAccount() {
+        let accountNumber = prompt("Nhập số tài khoản muốn xóa");
+        for (let i = 0; i < array.length; i++) {
+            if (accountNumber == array[i].getAccountNumber()) {
+                array.splice(i, 1);
+            }
+        }
+        displayAccount(array);
+
+    }
+</script>
+</body>
+</html>

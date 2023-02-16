@@ -37,14 +37,14 @@
         let i, kq="", tmp;
         for (let i =0; i< arr.length; i++){
             // duyệt từ đầu mảng
-            tmp = arr[i].trim().toLowerCase(); //
+            tmp = arr[i].toLowerCase(); //
             // xóa khaorng trắng trước sau từ, chuyển về chữ thường
             if (tmp != ""){
                 tmp = tmp.substr(0,1).toUpperCase() + tmp.substr(1);
                 kq += tmp + "";
             }
         }
-        document.getElementById("txtS").value = kq.trim();
+        document.getElementById("txtS").value = kq;
         // xóa khoảng trắng cuối chuỗi
     }
 </script>

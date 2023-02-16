@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Prime Number</title>
+</head>
+<body>
+<script>
+    let n = +prompt("nhap do dai cua mang lon:");
+    let arr = new Array(n)
+    let i;
+    for (let i = 0; i < arr.length; i++) {
+        let m = +prompt("nhap do dai cua mang nho");
+        let arr1 = [];
+        for (let j = 0; j < m; j++) {
+            arr1[j] = +prompt("nhap phan tu");
+            arr[i] = arr1;
+        }
+    }
+    console.log(arr);
+
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            if (arr[i][j] < 2){
+                flag = false;
+            }else {
+                flag = true;
+                for (let z =2; z <arr[i][j]; z++){
+                    if (arr[i][j] % z==0){
+                        flag = false;
+                        break;
+                    }
+                }
+                if (flag == true){
+                    document.write(arr[i][j]);
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>
