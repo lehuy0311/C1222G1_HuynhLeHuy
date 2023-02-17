@@ -10,9 +10,7 @@ public class ChangeMoney {
             System.out.println("Enter a money $ : ");
             usd = input.nextInt();
         } while (usd <= 0);
-        {
-        }
         int total = usd * 23000;
-        System.out.println("Total: " + total);
+        System.out.println("Total: " + total + " VND");
     }
 }
