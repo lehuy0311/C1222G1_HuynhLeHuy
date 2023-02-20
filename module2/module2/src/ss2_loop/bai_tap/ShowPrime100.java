@@ -1,19 +1,28 @@
 package ss2_loop.bai_tap;
 
+import java.util.Scanner;
+
 public class ShowPrime100 {
     public static void main(String[] args) {
-        System.out.print("2  ");
-        for (int i=3; i<=100; i++){
-            boolean isPrime = true;
-            for (int j=2; j<i; j++){
-                if (i%j==0){
-                    isPrime = false;
-                }
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Các số nguyên tố nhỏ hơn 100 là:  ");
+        int n;
+        for (int i = 2; i < 100; i++) {
+
+            if (checkSNT(i)) {
+                System.out.print(i + " ");
             }
-            if (isPrime){
-                System.out.print(i + "  ");
-            }
-            isPrime = true;
         }
+
+    }
+
+    public static boolean checkSNT(int n) {
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
+
     }
 }
