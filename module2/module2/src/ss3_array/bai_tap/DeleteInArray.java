@@ -19,24 +19,27 @@ public class DeleteInArray {
             System.out.println("Nhập vào phần tử thứ " + i);
             delete[i] = scanner.nextInt();
         }
-        for (int i = 0; i < delete.length; i++) {
-            System.out.print(delete[i]);
-        }
+//        for (int i = 0; i < delete.length; i++) {
+//            //System.out.print(delete[i]);
+//        }
+        System.out.println(Arrays.toString(delete));
+
         System.out.println("Nhập vào số cần xóa");
-        int timKiem = scanner.nextInt();
+        int check = scanner.nextInt();
         for (int i = 0; i < delete.length; i++) {
-            if (timKiem == delete[i]) {
+            if (check == delete[i]) {
                 for (int j = i; j < delete.length - 1; j++) {
                     delete[j] = delete[j + 1];
                 }
                 delete[delete.length - 1] = 0;
             }
-
         }
-        for (int i = 0; i < delete.length; i++) {
-            System.out.println(delete[i]);
-        }
+//        for (int i = 0; i < delete.length; i++) {
+//            System.out.println(delete[i]);
+//        }
+        System.out.println(Arrays.toString(delete));
     }
+
 //public static void main(String[] args) {
 //    int[] arr = new int[]{1,2,3,4,5};
 //    int[] arr_new = new int[arr.length-1];

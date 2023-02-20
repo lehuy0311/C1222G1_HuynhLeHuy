@@ -9,20 +9,27 @@ public class MergeArray {
         int[] arrays1;
         int[] arrays2;
         int n;
+        int m;
         int[] arrays3;
         do {
-            System.out.println("Nhập kích thước mảng :");
+            System.out.println("Nhập kích thước mảng 1 :");
             n = scanner.nextInt();
         } while (n > 10);
+
+        do {
+            System.out.println("Nhập kích thước mảng 2 :");
+            m = scanner.nextInt();
+        } while (m > 10);
+
         arrays1 = new int[n];
-        arrays2 = new int[n];
-        arrays3 = new int[n+n];
+        arrays2 = new int[m];
+        arrays3 = new int[m+n];
 
         for (int i = 0; i <n; i++) {
             System.out.println("Nhập vào phần tử mảng 1 vị trí thứ " + i);
             arrays1[i] = scanner.nextInt();
         }
-        for (int j = 0; j < n; j++) {
+        for (int j = 0; j < m; j++) {
             System.out.println("Nhập vào phần tử mảng 2 vị trí thứ " + j);
             arrays2[j] = scanner.nextInt();
         }
@@ -31,13 +38,13 @@ public class MergeArray {
             arrays3[d] = arrays1[k];
             d++;
         }
-        for (int k= 0; k < n; k++) {
+        for (int k= 0; k < m; k++) {
             arrays3[d] = arrays2[k];
             d++;
         }
-        for (int k = 0; k < 2*n; k++) {
-            //System.out.println( arrays3[k]);
+//        for (int k = 0; k < 2*n; k++) {
+//            System.out.println( arrays3[k]);
+//        }
             System.out.println(Arrays.toString(arrays3));
-        }
     }
 }
