@@ -13,7 +13,7 @@ public class SumOfOneColumn {
         return sum;
     }
 
-    // Tính tổng của một hàm
+    // Tính tổng của một hàng
 //        static float sumRow(int A[][],int m, int x) {
 //            int sum = 0;
 //            for (int i = 0; i < m; i++) {
