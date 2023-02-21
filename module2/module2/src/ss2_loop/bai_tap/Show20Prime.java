@@ -10,14 +10,14 @@ public class Show20Prime {
         int count = 0;
         int i = 2;
         while (count < n) {
-            if (checkSNT(i)) {
+            if (checkPrime(i)) {
                 System.out.print(i + " ");
                 count++;
             }
             i++;
         }
     }
-    public static boolean checkSNT(int n) {
+    public static boolean checkPrime(int n) {
         for (int i = 2; i <= Math.sqrt(n); i++) {
             if (n % i == 0) {
                 return false;
