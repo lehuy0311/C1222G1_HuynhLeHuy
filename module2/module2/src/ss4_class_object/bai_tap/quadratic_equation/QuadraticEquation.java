@@ -1,8 +1,9 @@
 package ss4_class_object.bai_tap.quadratic_equation;
 
 public class QuadraticEquation {
-    double a , b , c;
-
+    double a;
+    double b;
+    double c;
     QuadraticEquation(){
     }
 

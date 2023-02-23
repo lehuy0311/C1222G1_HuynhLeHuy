@@ -1,6 +1,6 @@
 package ss4_class_object.bai_tap.fan;
 
-public class FanController {
+public class Fan {
     private int SLow = 1;
     private int Medium = 2;
     private int Fast = 3;
@@ -9,13 +9,13 @@ public class FanController {
     private double radius = 5;
     private String color = "blue";
 
-    public FanController(int speed, boolean on, double radius, String color) {
+    public Fan(int speed, boolean on, double radius, String color) {
         this.speed = speed;
         this.on = on;
         this.radius = radius;
         this.color = color;
     }
-    public FanController(){
+    public Fan(){
 
     }
 

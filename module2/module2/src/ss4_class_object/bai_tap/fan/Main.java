@@ -7,8 +7,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println();
 
-        FanController fan1 = new FanController(3, true, 10, "yellow");
-        FanController fan2 = new FanController(2, true, 5, "red");
+        Fan fan1 = new Fan(3, true, 10, "yellow");
+        Fan fan2 = new Fan(2, true, 5, "red");
 
         System.out.println(fan1.toString());
         System.out.println(fan2.toString());
