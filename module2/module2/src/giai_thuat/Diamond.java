@@ -1,12 +1,12 @@
-package ss6_inheritance;
+package giai_thuat;
 
 import java.util.Scanner;
 
-public class hinh_thoi {
+public class Diamond {
     public static void main(String[] args) {
         int h;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Nhập vào chiều cao của tam giác: ");
+        System.out.println("Nhập vào chiều cao của hình thoi mà bạn mốn: ");
         h = scanner.nextInt();
 
         for (int i = 1; i < h; i++) {
