@@ -1,6 +1,6 @@
 package ss7_abstract.bai_tap.resizeable;
 
-public abstract class Shape implements Resizeable {
+public abstract class Shape implements IResizeable {
 
     private String color = "red";
     private Boolean filled = true;
