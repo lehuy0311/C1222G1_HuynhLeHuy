@@ -17,4 +17,7 @@ public class StudentRepository implements IStudentRepository {
     public void addStudent(Student student){
         studentList.add(student);
     }
+    public void deleteStudent(Student student){
+        studentList.remove(student);
+    }
 }

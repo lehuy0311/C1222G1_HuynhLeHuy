@@ -45,8 +45,14 @@ public class StudentService implements IStudentService {
         Double score = Double.parseDouble(input.nextLine());
 
         Student student1 = new Student(id, name, birth, gender, classes, score);
+
         iStudentRepository.addStudent(student1);
         System.out.println("Thêm thành công");
+
+    }
+
+    @Override
+    public void deleteStudent() {
 
     }
 

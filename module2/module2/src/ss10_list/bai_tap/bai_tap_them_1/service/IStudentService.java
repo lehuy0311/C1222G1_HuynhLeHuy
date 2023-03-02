@@ -8,4 +8,5 @@ public interface IStudentService {
     void displayAll();
     void addStudent();
 
+    void deleteStudent();
 }

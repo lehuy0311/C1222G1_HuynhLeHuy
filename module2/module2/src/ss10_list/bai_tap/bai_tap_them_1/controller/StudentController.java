@@ -33,14 +33,14 @@ public class StudentController {
                 case 3:
                     break;
                 case 4:
-                    //iStudentService.deleteStudent();
+                    iStudentService.deleteStudent();
                     break;
                 case 5:
                     break;
                 case 6:
                     break;
             }
-        } while (choice < 1 || choice > 6);
+        } while (choice >= 1 || choice <= 6);
 
     }
 }
