@@ -8,7 +8,7 @@ import java.util.Stack;
 
 public class ReverseString {
     public static void main(String[] args) {
-        Stack<Character> stack = new Stack<>();
+        Stack<String> stack = new Stack<>();
 
         Scanner input = new Scanner(System.in);
         System.out.println("Nhập vào số luọng phần tử ");
@@ -20,11 +20,16 @@ public class ReverseString {
             System.out.println("Phần tử thứ [" + i + "]:");
             arr[i] = input.nextLine();
         }
-        System.out.println(Arrays.toString(arr));
+        //System.out.println(Arrays.toString(arr));
 
-//        for (int i =0; i< arr.length; i++){
-//            reverseString.add(stack.pop());
-//        }
+        for (int i=0; i <arr.length; i++){
+            stack.push(arr[i]);
+        }
+        System.out.println(stack);
+
+        for (int i =0; i< arr.length; i++){
+            reverseString.add(stack.pop());
+        }
         System.out.println(reverseString);
     }
 }
