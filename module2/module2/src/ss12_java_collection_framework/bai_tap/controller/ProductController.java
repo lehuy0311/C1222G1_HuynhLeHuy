@@ -20,7 +20,7 @@ public class ProductController {
             System.out.println("2. Thêm sản phẩm ");
             System.out.println("3. Chỉnh sửa thông tin sản phẩm theo id");
             System.out.println("4. Xóa sản phẩm");
-            System.out.println("5. Sắp xếp theo thứ tự tăng dần");
+            System.out.println("5. Tìm kiếm sản phẩm");
             System.out.println("6. Sắp xếp theo thứ tự giảm dần");
             System.out.print("Mời bạn chọn ");
             choice = Integer.parseInt(scanner.nextLine());
@@ -32,12 +32,13 @@ public class ProductController {
                     iProductService.addProduct();
                     break;
                 case 3:
-                    //iProductService.editProduct();
+                    iProductService.editProduct();
                     break;
                 case 4:
                     iProductService.deleteProduct();
                     break;
                 case 5:
+                    iProductService.findProduct();
                     break;
                 case 6:
                     break;

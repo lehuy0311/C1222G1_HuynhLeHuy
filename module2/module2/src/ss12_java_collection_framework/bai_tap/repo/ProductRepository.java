@@ -26,4 +26,15 @@ public class ProductRepository implements IProductRepository {
     public void deleteProduct(Product product){
         productList.remove(product);
     }
+    public void findProduct(int id){
+    }
+    public void findProduct(){
+
+    }
+
+    @Override
+    public void editProduct(int id) {
+        productList.contains(id);
+    }
+
 }
