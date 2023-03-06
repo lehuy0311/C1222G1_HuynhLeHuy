@@ -24,7 +24,7 @@ public class BinarySearch {
         int[] arr = new int[n];
         for (int i = 0; i < arr.length; i++) {
             System.out.println("Nhập phần tử cho mảng: ");
-            arr[i] = sc.nextInt();
+            arr[i] = Integer.parseInt(sc.nextLine());
         }
 
         System.out.println(Arrays.toString(arr));
@@ -39,6 +39,9 @@ public class BinarySearch {
         }
         System.out.println("Mảng đã đưuọc sắp xếp lại là: ");
         System.out.println(Arrays.toString(arr));
-        System.out.println(binarySearch(arr, 0, 5, 2));
+
+        System.out.println("Nhập số bạn cần tìm: ");
+        int number = Integer.parseInt(sc.nextLine());
+        System.out.println(binarySearch(arr, 0, n, number));
     }
 }

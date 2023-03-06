@@ -19,8 +19,7 @@ public class StudentController {
             System.out.println("2. Thêm học viên ");
             System.out.println("3. Chỉnh sửa thông tin học viên");
             System.out.println("4. Xóa học viên");
-            System.out.println("5.");
-            System.out.println("6.");
+            System.out.println("5. Thoát");
             System.out.print("Mời bạn chọn ");
             choice = Integer.parseInt(scanner.nextLine());
             switch (choice) {
@@ -36,11 +35,9 @@ public class StudentController {
                     iStudentService.deleteStudent();
                     break;
                 case 5:
-                    break;
-                case 6:
-                    break;
+                    return;
             }
-        } while (choice >= 1 || choice <= 6);
+        } while (choice >= 1 || choice <=5);
 
     }
 }
