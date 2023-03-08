@@ -15,7 +15,7 @@ public class InsertionSortStepByStep {
                 arr[key] = arr[key-1];
                 key --;
             }
-            arr[key] = x;
+            arr[key] = x; //gán arr[key] = x.
         }
         return arr;
         }
@@ -23,6 +23,7 @@ public class InsertionSortStepByStep {
     public static void main(String[] args) {
         int[] array = {1, 8, 4, 44, -9, 0, 22, 99, 97};
         //System.out.println(insertionSort(array));
+        //Chạy class insert để in ra arr
         System.out.println(Arrays.toString(insertionSort(array)));
     }
 }
