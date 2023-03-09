@@ -29,7 +29,8 @@ public class CopyFileText {
             File file = new File(targetPath);
             FileWriter fileWriter = new FileWriter(file, true);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-            for (String e: readFile(sourcePath)) {
+            List<String> strings = readFile(sourcePath);
+            for (String e: strings) {
                 bufferedWriter.write(e);
                 bufferedWriter.newLine();
             }
