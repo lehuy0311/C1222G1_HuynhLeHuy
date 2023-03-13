@@ -69,7 +69,8 @@ public class Product implements Serializable {
                 ", descrip='" + descrip + '\'' +
                 '}';
     }
-    public String writeToCsv(){
-        return id + "," + name + "," + price + "," + producer + "," + descrip;
-    }
+//    public String writeToCsv(){
+//        return id + "," + name + "," + price + "," + producer + "," + descrip;
+//    }
+    
 }

@@ -25,10 +25,8 @@ public class ProductRepo implements IProductRepo {
     public List<Product> find(int id) {
         List<Product> products = ReadFile.read(PATH);
         List<Product> wanttedProduct = new ArrayList<>();
-        for (int i =0; i < products.size(); i++){
-            if (products.get(i).getId() == ProductService.){
-                //đoạn này em gặp 1 bug nhỏ, em muốn truyền idProduct từ bên ProductService vào
-                // để so sánh với id trong list danh sách mà không được
+        for (int i =0; i < products.size(); i++) {
+            if (products.get(i).equals(id)){
                 wanttedProduct.add(products.get(i));
             }
         }
