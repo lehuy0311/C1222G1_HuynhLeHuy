@@ -1,5 +1,10 @@
 package ss17_binary_file_serialization.bai_tap.product.controller;
 
+import ss17_binary_file_serialization.bai_tap.product.service.ProductService;
+import ss17_binary_file_serialization.bai_tap.product.service.IProductService;
+
+
+
 import java.util.Scanner;
 
 public class ProductController {
@@ -10,21 +15,19 @@ public class ProductController {
 
         Scanner sc = new Scanner(System.in);
         do {
-            System.out.println("==========================================================");
-            System.out.println("--PRODUCT MANAGEMENT--");
-            System.out.println("Choose a number to run its function");
-            System.out.println("1. Add a new product");
-            System.out.println("2. Display product's list");
-            System.out.println("3. Find Products");
-            System.out.println("4. Exit");
-            System.out.println("Enter a number: ");
+            System.out.println("--Quản lí sản phẩm--");
+            System.out.println("1. Hiển thị sản phẩm");
+            System.out.println("2. Thêm sản phẩm");
+            System.out.println("3. Tìm sản phẩm theo id");
+            System.out.println("4. Thoát");
+            System.out.println("Chọn lựa chọn bạn muốn ");
             choice = sc.nextLine();
             switch (choice) {
                 case "1":
-                    iProductService.add();
+                    iProductService.displayAll();
                     break;
                 case "2":
-                    iProductService.displayAll();
+                    iProductService.add();
                     break;
                 case "3":
                     iProductService.find();

@@ -6,7 +6,7 @@ public class CopyBinary {
     public static void main(String[] args) {
 
             if (args.length != 2) {
-                System.out.println("Chỉ có 2 file đường dùng trong chương trình này," +
+                System.out.println("Chỉ có 2 file đưuọc dùng trong chương trình này," +
                         "source và target");
             }
 
