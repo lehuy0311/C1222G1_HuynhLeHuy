@@ -61,13 +61,19 @@ public class FuramaController {
             select = Integer.parseInt(scanner.nextLine());
             switch (select) {
                 case 1:
-                    employeeServiceImpl.displayListService();
+                    //employeeServiceImpl.displayListService();
+                    // chức năng này thuôc task 3 và 4
+
                     break;
                 case 2:
-                    employeeServiceImpl.addNew();
+                    //employeeServiceImpl.addNew();
+                    // chức năng này thuôc task 3 và 4
+
                     break;
                 case 3:
-                    employeeServiceImpl.edit();
+                    //employeeServiceImpl.edit();
+                    // chức năng này thuôc task 3 và 4
+
                     break;
                 case 4:
                     displayMainMenu();
@@ -87,13 +93,19 @@ public class FuramaController {
             select = Integer.parseInt(scanner.nextLine());
             switch (select) {
                 case 1:
-                    customerServiceImpl.displayListService();
+                    //customerServiceImpl.displayListService();
+                    // chức năng này thuôc task 3 và 4
+
                     break;
                 case 2:
-                    customerServiceImpl.addNew();
+                    //customerServiceImpl.addNew();
+                    // chức năng này thuôc task 3 và 4
+
                     break;
                 case 3:
-                    customerServiceImpl.edit();
+                    //customerServiceImpl.edit();
+                    // chức năng này thuôc task 3 và 4
+
                     break;
                 case 4:
                     displayMainMenu();
@@ -113,7 +125,9 @@ public class FuramaController {
             select = Integer.parseInt(scanner.nextLine());
             switch (select) {
                 case 1:
-                    facilityServiceImpl.displayFacility();
+                    //facilityServiceImpl.displayFacility();
+                    // chức năng này thuôc task 3 và 4
+
                     break;
                 case 2:
                     int select;
@@ -126,13 +140,18 @@ public class FuramaController {
                         select = Integer.parseInt(scanner.nextLine());
                         switch (select) {
                             case 1:
-                                facilityServiceImpl.addNewVilla();
+                                //facilityServiceImpl.addNewVilla();
+                                // chức năng này thuôc task 3 và 4
+
                                 break;
                             case 2:
-                                facilityServiceImpl.addNewHouse();
+                                //facilityServiceImpl.addNewHouse();
+                                // chức năng này thuôc task 3 và 4
+
                                 break;
                             case 3:
-                                facilityServiceImpl.addNewRoom();
+                                //facilityServiceImpl.addNewRoom();
+                                // chức năng này thuôc task 3 và 4
                                 break;
                             case 4:
                                 System.out.println("Back to menu");
