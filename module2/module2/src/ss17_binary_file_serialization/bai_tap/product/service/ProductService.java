@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class ProductService implements IProductService {
     private final IProductRepo iProductRepo  = new ProductRepo();
-    public static final String PATH = "";
+    public static final String PATH = "src/ss17_binary_file_serialization/bai_tap/product/data/FileProduct.txt";
 
     @Override
     public void displayAll() {
@@ -21,13 +21,13 @@ public class ProductService implements IProductService {
     @Override
     public void add() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Mời bạn hập ID: ");
+        System.out.println("Mời bạn nhập ID: ");
         int id = Integer.parseInt(scanner.nextLine());
         System.out.println("Nhập tên sản phẩm: ");
         String name = scanner.nextLine();
         System.out.println("Nhập giá tiền: ");
         double price = Double.parseDouble(scanner.nextLine());
-        System.out.println("Nhập nhà saản xuất:");
+        System.out.println("Nhập nhà sản xuất:");
         String producer = scanner.nextLine();
         System.out.println("Mô tả về sản phẩm: ");
         String descrip = scanner.nextLine();

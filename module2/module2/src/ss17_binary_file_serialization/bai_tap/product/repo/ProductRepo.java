@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProductRepo implements IProductRepo {
-    public static final String PATH = "";
+    public static final String PATH = "src/ss17_binary_file_serialization/bai_tap/product/data/FileProduct.txt";
 
     @Override
     public List<Product> getAll() {
@@ -26,7 +26,7 @@ public class ProductRepo implements IProductRepo {
         List<Product> products = ReadFile.read(PATH);
         List<Product> wanttedProduct = new ArrayList<>();
         for (int i =0; i < products.size(); i++) {
-            if (products.get(i).equals(id)){
+            if (products.get(i).getId() == id){
                 wanttedProduct.add(products.get(i));
             }
         }

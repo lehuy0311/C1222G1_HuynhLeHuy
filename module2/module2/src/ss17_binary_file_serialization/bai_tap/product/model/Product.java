@@ -72,5 +72,5 @@ public class Product implements Serializable {
 //    public String writeToCsv(){
 //        return id + "," + name + "," + price + "," + producer + "," + descrip;
 //    }
-    
+
 }
