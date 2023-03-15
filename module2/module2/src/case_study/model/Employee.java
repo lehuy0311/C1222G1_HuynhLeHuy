@@ -62,4 +62,9 @@ public class Employee extends  Person{
                 ", level='" + level + '\'' +
                 ", payment=" + payment ;
     }
+    public String writeToCSV(){
+        return super.getId()+","+super.getName()+","+super.getDayOfBirth()+","
+                +super.getGender()+","+super.getSoCmnd()+","+super.getPhoneNumber()
+                +","+super.getEmail()+","+this.getProf()+","+this.getLevel()+","+this.getPayment();
+    }
 }

@@ -8,8 +8,11 @@ import java.util.Scanner;
 
 public class FuramaController {
     public static Scanner scanner = new Scanner(System.in);
-    public static boolean check = true;
     public static int select = 0;
+    public static EmployeeServiceImpl employeeServiceImpl = new EmployeeServiceImpl();
+    public static CustomerServiceImpl customerServiceImpl = new CustomerServiceImpl();
+    public static FacilityServiceImpl facilityServiceImpl = new FacilityServiceImpl();
+
 
     public static void main(String[] args) {
         displayMainMenu();
@@ -50,7 +53,6 @@ public class FuramaController {
     }
 
     public static void displayEmployeeManagement() {
-        EmployeeServiceImpl employeeServiceImpl = new EmployeeServiceImpl();
         do {
             System.out.println("----------Menu EmployeeManagement---------" +
                     "\n 1: Display list employees" +
@@ -61,12 +63,13 @@ public class FuramaController {
             select = Integer.parseInt(scanner.nextLine());
             switch (select) {
                 case 1:
+                    employeeServiceImpl.displayEmployee();
                     //employeeServiceImpl.displayListService();
                     // chức năng này thuôc task 3 và 4
 
                     break;
                 case 2:
-                    //employeeServiceImpl.addNew();
+                    employeeServiceImpl.addEmployee();
                     // chức năng này thuôc task 3 và 4
 
                     break;
@@ -82,7 +85,6 @@ public class FuramaController {
     }
 
     public static void displayCustomerManagement() {
-        CustomerServiceImpl customerServiceImpl = new CustomerServiceImpl();
         do {
             System.out.println("----------Menu CustomerManagement---------" +
                     "\n 1: Display list costomers" +
@@ -114,7 +116,6 @@ public class FuramaController {
     }
 
     public static void displayFacilityManagement() {
-        FacilityServiceImpl facilityServiceImpl = new FacilityServiceImpl();
         do {
             System.out.println("----------Menu FacilityManagement---------" +
                     "\n 1: Display list facility" +

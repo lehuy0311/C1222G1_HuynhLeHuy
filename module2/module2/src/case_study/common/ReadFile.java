@@ -4,30 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ReadFile {
-    public static List<String> readFile(String path) {
+
+    public static List<String> readFile(String path){
+        FileReader fileReader = null;
         List<String> stringList = new ArrayList<>();
-        File file = new File(path);
-        BufferedReader br = null;
+        String line = null;
         try {
-            FileReader fileReader = new FileReader(file);
-            br = new BufferedReader(fileReader);
-            String line = "";
-            while ((line = br.readLine()) != null) {
+            fileReader = new FileReader(path);
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            while ((line = bufferedReader.readLine()) != null){
                 stringList.add(line);
             }
-        } catch (FileNotFoundException fileNotFoundException) {
-            fileNotFoundException.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                if (br != null) {
-                    br.close();
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            return stringList;
+        }catch (FileNotFoundException e){
+            throw new RuntimeException();
+        }catch (IOException e){
+            throw new RuntimeException();
         }
+        return stringList;
     }
 }

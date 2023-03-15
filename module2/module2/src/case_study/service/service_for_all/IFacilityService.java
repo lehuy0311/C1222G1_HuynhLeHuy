@@ -1,6 +1,6 @@
 package case_study.service.service_for_all;
 
-public interface FacilityService {
+public interface IFacilityService {
     void displayFacility();
     void displayMaintain();
     void addNewVilla();

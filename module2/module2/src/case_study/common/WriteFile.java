@@ -4,27 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WriteFile {
-    public static void writeFile(String path, List<String> stringList, boolean append) {
-        File file = new File(path);
-        BufferedWriter bw = null;
+    public static void writeFile(String path, List<String> strings) {
+        FileWriter fileWriter = null;
         try {
-            FileWriter fileWriter = new FileWriter(file, append);
-            bw = new BufferedWriter(fileWriter);
-            for (String line : stringList) {
-                bw.write((line));
-                bw.newLine();
+            fileWriter = new FileWriter(path, true);
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            for (String line : strings) {
+                bufferedWriter.write(line);
+                bufferedWriter.newLine();
             }
+            bufferedWriter.close();
+
         } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                if (bw != null) {
-                    bw.flush();
-                    bw.close();
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            throw new RuntimeException(e);
+
         }
     }
 }
