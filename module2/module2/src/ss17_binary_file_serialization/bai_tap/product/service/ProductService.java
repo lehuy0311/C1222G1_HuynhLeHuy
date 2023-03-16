@@ -31,6 +31,7 @@ public class ProductService implements IProductService {
         String producer = scanner.nextLine();
         System.out.println("Mô tả về sản phẩm: ");
         String descrip = scanner.nextLine();
+
         Product newProduct = new Product(id, name, price, producer, descrip);
         List<Product> products = iProductRepo.getAll();
         products.add(newProduct);

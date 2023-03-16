@@ -64,19 +64,12 @@ public class FuramaController {
             switch (select) {
                 case 1:
                     employeeServiceImpl.displayEmployee();
-                    //employeeServiceImpl.displayListService();
-                    // chức năng này thuôc task 3 và 4
-
                     break;
                 case 2:
                     employeeServiceImpl.addEmployee();
-                    // chức năng này thuôc task 3 và 4
-
                     break;
                 case 3:
-                    //employeeServiceImpl.edit();
-                    // chức năng này thuôc task 3 và 4
-
+                    employeeServiceImpl.editEmployee();
                     break;
                 case 4:
                     displayMainMenu();
@@ -96,17 +89,11 @@ public class FuramaController {
             switch (select) {
                 case 1:
                     //customerServiceImpl.displayListService();
-                    // chức năng này thuôc task 3 và 4
-
                     break;
                 case 2:
-                    //customerServiceImpl.addNew();
-                    // chức năng này thuôc task 3 và 4
 
                     break;
                 case 3:
-                    //customerServiceImpl.edit();
-                    // chức năng này thuôc task 3 và 4
 
                     break;
                 case 4:

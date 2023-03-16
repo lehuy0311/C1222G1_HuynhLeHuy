@@ -4,6 +4,6 @@ public interface IEmployeeService extends IService {
     public void displayEmployee();
     void addEmployee();
     void editEmployee();
-    void deleteEmployee();
+    //void deleteEmployee();
 
 }

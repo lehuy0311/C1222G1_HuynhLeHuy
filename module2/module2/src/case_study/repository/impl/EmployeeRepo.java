@@ -7,6 +7,7 @@ import case_study.repository.IEmployeeRepo;
 
 import java.io.Reader;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class EmployeeRepo implements IEmployeeRepo {
@@ -37,17 +38,21 @@ public class EmployeeRepo implements IEmployeeRepo {
         return employees;
     }
     public void addEmployee(Employee employee){
-        String str = employee.writeToCSV();
         List<String> stringList = new ArrayList<>();
+        String str = employee.writeToCSV();
         stringList.add(str);
         WriteFile.writeFile(PATH, stringList);
 
     }
 
     @Override
-    public int editEmployee(int id) {
-        return 0;
-    }
+    public void  editEmployee(int index, Employee employee, List<Employee> employees) {
+        List<String> stringList = new ArrayList<>();
+        String str = employee.writeToCSV();
+        employees.set(index, employee);
+        stringList.add(str);
+        WriteFile.writeFile(PATH, stringList);
+ }
 
     @Override
     public int deleteEmployee(int id) {

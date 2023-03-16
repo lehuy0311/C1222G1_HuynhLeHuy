@@ -64,7 +64,7 @@ public class Employee extends  Person{
     }
     public String writeToCSV(){
         return super.getId()+","+super.getName()+","+super.getDayOfBirth()+","
-                +super.getGender()+","+super.getSoCmnd()+","+super.getPhoneNumber()
-                +","+super.getEmail()+","+this.getProf()+","+this.getLevel()+","+this.getPayment();
+                +super.getGender()+","+super.getSoCmnd()+","+super.getPhoneNumber()+","
+                +super.getEmail()+","+this.getProf()+","+this.getLevel()+","+this.getPayment();
     }
 }
