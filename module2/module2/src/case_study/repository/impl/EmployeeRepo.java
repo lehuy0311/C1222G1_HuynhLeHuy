@@ -42,27 +42,23 @@ public class EmployeeRepo implements IEmployeeRepo {
         String str = employee.writeToCSV();
         stringList.add(str);
         WriteFile.writeFile(PATH, stringList);
-
     }
 
     @Override
-    public void  editEmployee(int index, Employee employee, List<Employee> employees) {
+    public void editEmployee(int i, Employee employee, List<Employee> list) {
         List<String> stringList = new ArrayList<>();
         String str = employee.writeToCSV();
-        employees.set(index, employee);
+        list.set(i, employee);
         stringList.add(str);
+        stringList.remove(str);
         WriteFile.writeFile(PATH, stringList);
- }
-
-    @Override
-    public int deleteEmployee(int id) {
-        return 0;
     }
 
-//    private static String writeToCSV(Employee employee){
-//        return employee.getId()+","+employee.getName()+","+employee.getDayOfBirth()+","
-//                +employee.getGender()+","+employee.getSoCmnd()+","+employee.getPhoneNumber()
-//                +","+employee.getEmail()+","+employee.getProf()+","+employee.getLevel()+","+employee.getPayment();
-//    }
+
+    @Override
+    public void deleteEmployee(int id,  Employee employee) {
+        List<String> stringList = ReadFile.readFile(PATH);
+        stringList.remove(employee);
+    }
 
 }

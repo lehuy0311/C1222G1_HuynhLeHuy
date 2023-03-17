@@ -45,7 +45,7 @@ public class FuramaController {
                 case 5:
                     displayPromotionManagement();
                     break;
-                case 6:
+                case 7:
                     System.exit(6);
 
             }
@@ -58,7 +58,8 @@ public class FuramaController {
                     "\n 1: Display list employees" +
                     "\n 2: Add new employee" +
                     "\n 3: Edit employee" +
-                    "\n 4: Return main menu");
+                    "\n 4: Remove employee"+
+                    "\n 5: Return main menu");
             System.out.print("Please enter your choose!:");
             select = Integer.parseInt(scanner.nextLine());
             switch (select) {
@@ -72,6 +73,8 @@ public class FuramaController {
                     employeeServiceImpl.editEmployee();
                     break;
                 case 4:
+                    //employeeServiceImpl.deleteEmployee();
+                case 5:
                     displayMainMenu();
             }
         } while (select != 4);
@@ -88,13 +91,12 @@ public class FuramaController {
             select = Integer.parseInt(scanner.nextLine());
             switch (select) {
                 case 1:
-                    //customerServiceImpl.displayListService();
+                    customerServiceImpl.displayCustomer();
                     break;
                 case 2:
-
+                    customerServiceImpl.addCustomer();
                     break;
                 case 3:
-
                     break;
                 case 4:
                     displayMainMenu();

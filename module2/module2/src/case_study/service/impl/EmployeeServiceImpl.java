@@ -5,7 +5,6 @@ import case_study.model.Employee;
 import case_study.repository.IEmployeeRepo;
 import case_study.repository.impl.EmployeeRepo;
 import case_study.service.service_for_all.IEmployeeService;
-import javafx.scene.transform.Scale;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,14 +42,12 @@ public class EmployeeServiceImpl implements IEmployeeService {
     public void addEmployee() {
         List<Employee> employees = iEmployeeRepo.displayEmployees();
 
-
         System.out.println("id employee");
         int idEmployee = Integer.parseInt(scanner.nextLine());
 
         if (checkExest(idEmployee) == true) {
             System.out.println("Mã id này đã tồn tại");
         } else {
-
             System.out.println("name employee");
             String nameEmployee = scanner.nextLine();
             System.out.println("birth employee");
@@ -69,7 +66,6 @@ public class EmployeeServiceImpl implements IEmployeeService {
             String levelEmployee = scanner.nextLine();
             System.out.println("payment employee");
             int payEmployee = Integer.parseInt(scanner.nextLine());
-            System.out.println("birth employee");
 
             Employee employee = new Employee(idEmployee, nameEmployee,
                     birthEmployee, genderEmployee, cmndEmployee,
@@ -83,50 +79,85 @@ public class EmployeeServiceImpl implements IEmployeeService {
 
     @Override
     public void editEmployee() {
-        System.out.println("Nhập id nhân viên mà bạn muốn chinh suar: ");
+        List<Employee> employeeList = iEmployeeRepo.displayEmployees();
+
+        System.out.println("Nhập id nhân viên mà bạn muốn chỉnh sửa: ");
         int idEmployee = Integer.parseInt(scanner.nextLine());
 
-        List<Employee> employees = iEmployeeRepo.displayEmployees();
+        for (int i = 0; i < employeeList.size(); i++) {
+            if (employeeList.get(i).getId() == idEmployee) {
+                Employee employees = new Employee();
 
-        for (int i = 0; i < employees.size(); i++) {
-            if (checkExest(idEmployee)) {
                 System.out.println("chỉnh sửa name employee");
                 String nameEmployee = scanner.nextLine();
+                employees.setName(nameEmployee);
+
                 System.out.println("chỉnh sửa birth employee");
                 String birthEmployee = scanner.nextLine();
+                employees.setDayOfBirth(birthEmployee);
+
                 System.out.println("chỉnh sửa gender employee");
                 String genderEmployee = scanner.nextLine();
+                employees.setGender(genderEmployee);
+
                 System.out.println("chỉnh sửa CMND employee");
                 String cmndEmployee = scanner.nextLine();
+                employees.setSoCmnd(cmndEmployee);
+
                 System.out.println("chỉnh sửa number phone employee");
                 String phoneEmployee = scanner.nextLine();
+                employees.setPhoneNumber(phoneEmployee);
+
                 System.out.println("chỉnh sửa email employee");
                 String emailEmployee = scanner.nextLine();
+                employees.setEmail(emailEmployee);
+
                 System.out.println("chỉnh sửa prof employee");
                 String profEmployee = scanner.nextLine();
+                employees.setProf(profEmployee);
+
                 System.out.println("chỉnh sửa level employee");
                 String levelEmployee = scanner.nextLine();
+                employees.setLevel(levelEmployee);
+
                 System.out.println("chỉnh sửa payment employee");
                 int payEmployee = Integer.parseInt(scanner.nextLine());
-                System.out.println("chỉnh sửa birth employee");
+                employees.setPayment(payEmployee);
 
                 Employee employee = new Employee(idEmployee, nameEmployee,
                         birthEmployee, genderEmployee, cmndEmployee,
                         phoneEmployee, emailEmployee, profEmployee,
                         levelEmployee, payEmployee);
 
-                iEmployeeRepo.editEmployee(i, employee, employees);
+                iEmployeeRepo.editEmployee(i, employee, employeeList);
                 return;
             } else {
-                System.out.println("Mã id này không tồn tại.");
+                System.out.println("MA ID ko ton tai");
             }
-
         }
-//        @Override
-//        public void deleteEmployee () {
-//            return 0;
-//        }
 
+//    @Override
+//    public void deleteEmployee() {
+//        List<Employee> list = iEmployeeRepo.displayEmployees();
+//        System.out.println("Nhập id của sản phẩm cần xóa: ");
+//        int id = Integer.parseInt(scanner.nextLine());
+//
+//        for (int i=0; i<list.size(); i++); {
+//            if (list. == id) {
+//                System.out.println("Bạn có chắc muốn xóa nhân viên này không? \n" +
+//                        "1.Có \n" + "2.Không");
+//                int number = Integer.parseInt(scanner.nextLine());
+//                if (number == 1) {
+//                    iEmployeeRepo.deleteEmployee(id, employee);
+//                    System.out.println("Xóa thành công!");
+//                } else if (number == 2) {
+//                    System.out.println("Không muốn xóa thì out");
+//                }
+//            }
+//        }
+//        System.out.println("Không có sản phẩm muốn xóa");
+//    }
     }
 }
+
 

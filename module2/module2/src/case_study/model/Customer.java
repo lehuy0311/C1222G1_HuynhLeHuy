@@ -45,10 +45,15 @@ public class Customer extends Person {
 
     @Override
     public String toString() {
-        return "Customer{" +
+        return super.toString() +
                 super.toString()+
                 "typeOfCustomer='" + typeOfCustomer + '\'' +
-                ", address='" + address + '\'' +
-                '}';
+                ", address='" + address ;
+    }
+
+    public String writeToCSV(){
+        return super.getId()+","+super.getName()+","+super.getDayOfBirth()+","
+                +super.getGender()+","+super.getSoCmnd()+","+super.getPhoneNumber()+","
+                +super.getEmail()+","+this.getTypeOfCustomer()+","+this.getAddress();
     }
 }
