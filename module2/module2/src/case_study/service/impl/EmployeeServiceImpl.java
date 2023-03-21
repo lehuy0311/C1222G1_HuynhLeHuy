@@ -77,64 +77,69 @@ public class EmployeeServiceImpl implements IEmployeeService {
 
     }
 
-    @Override
+//    @Override
+//    public void editEmployee() {
+//        List<Employee> employeeList = iEmployeeRepo.displayEmployees();
+//
+//        System.out.println("Nhập id nhân viên mà bạn muốn chỉnh sửa: ");
+//        int idEmployee = Integer.parseInt(scanner.nextLine());
+//
+//        for (int i = 0; i < employeeList.size(); i++) {
+//            if (employeeList.get(i).getId() == idEmployee) {
+//                Employee employees = new Employee();
+//
+//                System.out.println("chỉnh sửa name employee");
+//                String nameEmployee = scanner.nextLine();
+//                employees.setName(nameEmployee);
+//
+//                System.out.println("chỉnh sửa birth employee");
+//                String birthEmployee = scanner.nextLine();
+//                employees.setDayOfBirth(birthEmployee);
+//
+//                System.out.println("chỉnh sửa gender employee");
+//                String genderEmployee = scanner.nextLine();
+//                employees.setGender(genderEmployee);
+//
+//                System.out.println("chỉnh sửa CMND employee");
+//                String cmndEmployee = scanner.nextLine();
+//                employees.setSoCmnd(cmndEmployee);
+//
+//                System.out.println("chỉnh sửa number phone employee");
+//                String phoneEmployee = scanner.nextLine();
+//                employees.setPhoneNumber(phoneEmployee);
+//
+//                System.out.println("chỉnh sửa email employee");
+//                String emailEmployee = scanner.nextLine();
+//                employees.setEmail(emailEmployee);
+//
+//                System.out.println("chỉnh sửa prof employee");
+//                String profEmployee = scanner.nextLine();
+//                employees.setProf(profEmployee);
+//
+//                System.out.println("chỉnh sửa level employee");
+//                String levelEmployee = scanner.nextLine();
+//                employees.setLevel(levelEmployee);
+//
+//                System.out.println("chỉnh sửa payment employee");
+//                int payEmployee = Integer.parseInt(scanner.nextLine());
+//                employees.setPayment(payEmployee);
+//
+//                Employee employee = new Employee(idEmployee, nameEmployee,
+//                        birthEmployee, genderEmployee, cmndEmployee,
+//                        phoneEmployee, emailEmployee, profEmployee,
+//                        levelEmployee, payEmployee);
+//
+//                iEmployeeRepo.editEmployee(i, employee, employeeList);
+//                return;
+//            } else {
+//                System.out.println("MA ID ko ton tai");
+//            }
+//        }
+
     public void editEmployee() {
-        List<Employee> employeeList = iEmployeeRepo.displayEmployees();
+        iEmployeeRepo.editEmployee();
 
-        System.out.println("Nhập id nhân viên mà bạn muốn chỉnh sửa: ");
-        int idEmployee = Integer.parseInt(scanner.nextLine());
-
-        for (int i = 0; i < employeeList.size(); i++) {
-            if (employeeList.get(i).getId() == idEmployee) {
-                Employee employees = new Employee();
-
-                System.out.println("chỉnh sửa name employee");
-                String nameEmployee = scanner.nextLine();
-                employees.setName(nameEmployee);
-
-                System.out.println("chỉnh sửa birth employee");
-                String birthEmployee = scanner.nextLine();
-                employees.setDayOfBirth(birthEmployee);
-
-                System.out.println("chỉnh sửa gender employee");
-                String genderEmployee = scanner.nextLine();
-                employees.setGender(genderEmployee);
-
-                System.out.println("chỉnh sửa CMND employee");
-                String cmndEmployee = scanner.nextLine();
-                employees.setSoCmnd(cmndEmployee);
-
-                System.out.println("chỉnh sửa number phone employee");
-                String phoneEmployee = scanner.nextLine();
-                employees.setPhoneNumber(phoneEmployee);
-
-                System.out.println("chỉnh sửa email employee");
-                String emailEmployee = scanner.nextLine();
-                employees.setEmail(emailEmployee);
-
-                System.out.println("chỉnh sửa prof employee");
-                String profEmployee = scanner.nextLine();
-                employees.setProf(profEmployee);
-
-                System.out.println("chỉnh sửa level employee");
-                String levelEmployee = scanner.nextLine();
-                employees.setLevel(levelEmployee);
-
-                System.out.println("chỉnh sửa payment employee");
-                int payEmployee = Integer.parseInt(scanner.nextLine());
-                employees.setPayment(payEmployee);
-
-                Employee employee = new Employee(idEmployee, nameEmployee,
-                        birthEmployee, genderEmployee, cmndEmployee,
-                        phoneEmployee, emailEmployee, profEmployee,
-                        levelEmployee, payEmployee);
-
-                iEmployeeRepo.editEmployee(i, employee, employeeList);
-                return;
-            } else {
-                System.out.println("MA ID ko ton tai");
-            }
-        }
+    }
 
 //    @Override
 //    public void deleteEmployee() {
@@ -158,6 +163,6 @@ public class EmployeeServiceImpl implements IEmployeeService {
 //        System.out.println("Không có sản phẩm muốn xóa");
 //    }
     }
-}
+
 
 

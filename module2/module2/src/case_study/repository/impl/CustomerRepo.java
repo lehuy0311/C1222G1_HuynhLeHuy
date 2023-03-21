@@ -3,13 +3,9 @@ package case_study.repository.impl;
 import case_study.common.ReadFile;
 import case_study.common.WriteFile;
 import case_study.model.Customer;
-import case_study.model.Employee;
 import case_study.repository.ICustomerRepo;
-import case_study.repository.IEmployeeRepo;
 
-import java.io.Reader;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class CustomerRepo implements ICustomerRepo {
