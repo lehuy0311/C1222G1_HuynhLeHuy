@@ -1,4 +1,4 @@
-package Ex1_again;
+package Ex1_introduction_to_java;
 
 import java.util.Scanner;
 
@@ -8,9 +8,9 @@ public class Calculator {
             try {
                 Scanner scanner = new Scanner(System.in);
                 System.out.println("Input number 1: ");
-                int number1 = Integer.parseInt(scanner.nextLine());
+                float number1 = Float.parseFloat(scanner.nextLine());
                 System.out.println("Input number 2: ");
-                int number2 = Integer.parseInt(scanner.nextLine());
+                float number2 = Float.parseFloat(scanner.nextLine());
                 int choice;
                 do {
                     System.out.println("----Calculator----");
@@ -51,19 +51,19 @@ public class Calculator {
     }
 
 
-    public static int sum(int number1, int number2) {
+    public static float sum(float number1, float number2) {
         return number1 + number2;
     }
 
-    public static int subtraction(int number1, int number2) {
+    public static float subtraction(float number1, float number2) {
         return number1 - number2;
     }
 
-    public static int multiplication(int number1, int number2) {
+    public static float multiplication(float number1, float number2) {
         return number1 * number2;
     }
 
-    public static int divide(int number1, int number2) {
+    public static float divide(float number1, float number2) {
         return number1 / number2;
     }
 }
