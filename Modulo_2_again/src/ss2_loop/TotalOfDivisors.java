@@ -1,4 +1,4 @@
-package Ex2_Loop;
+package ss2_loop;
 
 import java.util.Scanner;
 
@@ -9,7 +9,7 @@ public class TotalOfDivisors {
         int number = Integer.parseInt(scanner.nextLine());
         int sum = 0;
         if (number > 0) {
-            for (int i = 1; i < number; i++) {
+            for (int i = 1; i <= number; i++) {
                 if (number % i == 0) {
                     sum = sum + i;
                 }

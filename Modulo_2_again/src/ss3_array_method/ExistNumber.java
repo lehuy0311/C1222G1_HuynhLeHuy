@@ -1,4 +1,4 @@
-package Ex3_array_method;
+package ss3_array_method;
 
 import java.util.Scanner;
 
