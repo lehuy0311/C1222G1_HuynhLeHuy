@@ -1,11 +1,14 @@
 package ss5_am;
 
 public class Employee {
+
+    // Tính bao đóng cho các thuộc tính được thể hiện qua AM là private
     private String name;
     private String phoneNumber;
     private String workingParts;
-    public static  String nameCompany = "ABC";
+
     //Đặt tên công ty là biến static để dùng chung cho tất cả dối tượng
+    public static  String nameCompany = "ABC";
     public Employee(){
     }
 

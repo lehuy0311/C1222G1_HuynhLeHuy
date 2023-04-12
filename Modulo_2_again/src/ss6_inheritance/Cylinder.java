@@ -11,6 +11,7 @@ public class Cylinder extends Circle {
     public Cylinder(double radius, String color, double height) {
         super(radius, color); // kế thừa từ Circle
         this.height = height; // height được thêm mới
+        // height không đưuọc kế thừa
     }
 
     public double getHeight() {
@@ -25,6 +26,7 @@ public class Cylinder extends Circle {
         return super.getArea() * this.height;
     }
 
+    //Ghi đè phương thức thể hiện trong các class có mối quan hệ kế thừa
     @Override
     public String toString() {
         return "Cylinder{" +
