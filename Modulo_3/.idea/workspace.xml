@@ -20,12 +20,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95d36e58-d3af-492e-b51d-aefc6afa8efe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss7_website_layout/exercise/layout/html5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_website_layout/exercise/layout/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_website_layout/exercise/layout_rwd/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_website_layout/exercise/layout_rwd/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/controller/TeacherController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/model/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/repository/IStudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/repository/ITeacherRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/repository/implement/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/repository/implement/TeacherRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/service/IStudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/service/ITeacherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/service/implement/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/service/implement/TeacherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/view/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/fruit_management/controller/FruitController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/fruit_management/repository/FruitRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/fruit_management/repository/IFruitRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/fruit_management/service/FruitService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/fruit_management/service/IFruitService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/fruit_management/view/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/out/production/Modulo_2_again/ss5_am/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/out/production/Modulo_2_again/ss5_am/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/out/production/Modulo_2_again/ss6_inheritance/Cylinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/out/production/Modulo_2_again/ss6_inheritance/Cylinder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/fruit_management/model/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/fruit_management/model/Fruit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss7_website_layout/practice/create_horizontal_menu/create_horizontal_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_website_layout/practice/create_horizontal_menu/create_horizontal_menu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +97,8 @@
       <workItem from="1681357343988" duration="3549000" />
       <workItem from="1681372489631" duration="2709000" />
       <workItem from="1681377101360" duration="727000" />
+      <workItem from="1681529009770" duration="2381000" />
+      <workItem from="1681692686283" duration="1863000" />
     </task>
     <servers />
   </component>

@@ -4,18 +4,18 @@ public class Fruit {
     private String nameFruit;
     private String typeFruit;
     private String dateProduct;
-    private String hanSuDung;
+    private String expiry;
     private String source;
     private String price;
 
     public Fruit() {
     }
 
-    public Fruit(String nameFruit, String typeFruit, String dateProduct, String hanSuDung, String source, String price) {
+    public Fruit(String nameFruit, String typeFruit, String dateProduct, String expiry, String source, String price) {
         this.nameFruit = nameFruit;
         this.typeFruit = typeFruit;
         this.dateProduct = dateProduct;
-        this.hanSuDung = hanSuDung;
+        this.expiry = expiry;
         this.source = source;
         this.price = price;
     }
@@ -44,12 +44,12 @@ public class Fruit {
         this.dateProduct = dateProduct;
     }
 
-    public String getHanSuDung() {
-        return hanSuDung;
+    public String getExpiry() {
+        return expiry;
     }
 
-    public void setHanSuDung(String hanSuDung) {
-        this.hanSuDung = hanSuDung;
+    public void setExpiry(String expiry) {
+        this.expiry = expiry;
     }
 
     public String getSource() {
@@ -74,7 +74,7 @@ public class Fruit {
                 "nameFruit='" + nameFruit + '\'' +
                 ", typeFruit='" + typeFruit + '\'' +
                 ", dateProduct='" + dateProduct + '\'' +
-                ", hanSuDung='" + hanSuDung + '\'' +
+                ", hanSuDung='" + expiry + '\'' +
                 ", source='" + source + '\'' +
                 ", price='" + price + '\'' +
                 '}';
