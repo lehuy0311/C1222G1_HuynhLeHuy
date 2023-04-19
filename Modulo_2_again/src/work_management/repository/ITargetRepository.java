@@ -5,8 +5,8 @@ import work_management.model.Target;
 import java.util.List;
 
 public interface ITargetRepository {
-    void display();
-    void add(Target target);
+    List<Target> display();
+    void add(List<Target> targetList);
     void delete(int index);
     void edit(int index, Target target);
     Target findById(int id);

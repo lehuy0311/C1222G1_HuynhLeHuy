@@ -12,19 +12,14 @@ public class ReadFile {
         List<Target> targetList = new ArrayList<>();
         BufferedReader bufferedReader =  null;
         try {
-            bufferedReader = new BufferedReader(new FileReader(path));
-            String temp;
-            if(bufferedReader.readLine() != null){
-                while ((temp = bufferedReader.readLine()) != null){
-                    String[] tempArr;
-                    tempArr = temp.split(",");
-                    targetList.add(new Target(Integer.parseInt(tempArr[0]),
-                            tempArr[1], tempArr[2], tempArr[3] ,tempArr[4] ));
-                }
+            bufferedReader = new BufferedReader(new FileReader(PATH));
+            String line ="";
+            while ((line = bufferedReader.readLine()) != null){
+                String[] temp = line.split(",");
+                Target target = new Target(Integer.parseInt(temp[0]), temp[1],temp[2], temp[3],temp[4]);
+                targetList.add(target);
             }
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
             e.printStackTrace();
         } catch (Exception e){
             e.printStackTrace();

@@ -21,12 +21,12 @@ public class WorkController {
             System.out.println("7. Search by name ascending");
             System.out.println("8. Search by money ascending");
             System.out.println("9. Exit");
-            System.out.println("Please input your choice");
+            System.out.print("Please input your choice:");
 
             choice = Integer.parseInt(scanner.nextLine());
             switch (choice){
                 case 1:
-                    iTargetService.display();
+                    iTargetService.getAll();
                     break;
                 case 2:
                     iTargetService.add();

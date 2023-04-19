@@ -12,22 +12,13 @@ public class TargetRepository implements ITargetRepository{
 
     public static List<Target> targetList = ReadFile.readFile(PATH);
     @Override
-    public void display() {
-        targetList = ReadFile.readFile(PATH);
-        if(targetList.size() ==0){
-            System.out.println("No data");
-        }else {
-            for(Target target : targetList){
-                System.out.println(target.writeToCsv());
-            }
-        }
+    public List<Target> display() {
+        return ReadFile.readFile(PATH);
     }
 
     @Override
-    public void add(Target target) {
-        targetList = ReadFile.readFile(PATH);
-        targetList.add(target);
-        WriteFile.writeFile(PATH, target);
+    public void add(List<Target> targetList) {
+        WriteFile.writeFile(targetList);
     }
 
     @Override
@@ -42,7 +33,7 @@ public class TargetRepository implements ITargetRepository{
     public void edit(int index, Target target) {
         targetList = ReadFile.readFile(PATH);
         targetList.set(index, target);
-        WriteFile.writeFile(PATH, target);
+        WriteFile.writeFile(targetList);
     }
 
     @Override

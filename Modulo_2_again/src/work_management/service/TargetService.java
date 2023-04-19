@@ -14,42 +14,48 @@ public class TargetService implements ITargetService{
     private Scanner scanner = new Scanner(System.in);
     public static final String PATH = "src/work_management/data/Target.csv";
     @Override
-    public void display() {
-        iTargetRepository.display();
+    public void getAll() {
+        List<Target> targetList = iTargetRepository.display();
+        if(targetList.size() ==0){
+            System.out.println("No data");
+        }else {
+            for(Target target : targetList){
+                System.out.println(target.writeToCsv());
+            }
+        }
+    }
+
+    public boolean check(int id){
+        List<Target> targetList = iTargetRepository.display();
+        for (Target target : targetList){
+            if (target.getId() == id){
+                return true;
+            }
+        }
+        return false;
     }
 
     @Override
     public void add() {
-        List<Target> targetList = ReadFile.readFile(PATH);
+        List<Target> targetList = iTargetRepository.display();
         System.out.println("Input id");
-        try{
-            int id = Integer.parseInt(scanner.nextLine());
-            boolean flag = true;
-            for (int i=0; i < targetList.size(); i++){
-                if (id == targetList.get(i).getId()){
-                    flag = false;
-                    break;
-                }
-            }
-            if (flag = true){
-                System.out.println("Input name");
-                String name = scanner.nextLine();
-                System.out.println("Input date");
-                String date = scanner.nextLine();
-                System.out.println("Input money");
-                String money = scanner.nextLine();
-                System.out.println("Input description");
-                String description = scanner.nextLine();
+        int id = Integer.parseInt(scanner.nextLine());
+        if (check(id) == false ){
+            System.out.println("Input name");
+            String name = scanner.nextLine();
+            System.out.println("Input date");
+            String date = scanner.nextLine();
+            System.out.println("Input money");
+            String money = scanner.nextLine();
+            System.out.println("Input description");
+            String description = scanner.nextLine();
 
-                Target target = new Target(id, name, date,money, description);
-                iTargetRepository.add(target);
-            }else {
-                System.out.println("ID exist");
-            }
-        }catch (NumberFormatException e){
-            System.out.println("Input number");
-        }catch (Exception e){
-            System.out.println("Input again");
+            Target target = new Target(id, name, date,money, description);
+            targetList.add(target);
+            iTargetRepository.add(targetList);
+            System.out.println("Add success");
+        }else {
+            System.out.println("ID exist");
         }
     }
 

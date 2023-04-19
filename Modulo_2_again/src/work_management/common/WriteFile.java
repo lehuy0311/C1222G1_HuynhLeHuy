@@ -6,24 +6,27 @@ import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.List;
 
 public class WriteFile {
-    public static void writeFile(String path, Target target){
+    public static final String PATH = "src/work_management/data/Target.csv";
+    public static void writeFile(List<Target> targetList){
         BufferedWriter bufferedWriter = null;
         try {
-            bufferedWriter = new BufferedWriter(new FileWriter(path, true));
-            bufferedWriter.write(target.writeToCsv());
-            bufferedWriter.newLine();
-        } catch (FileNotFoundException e){
-            e.printStackTrace();
+            FileWriter fileWriter = new FileWriter(PATH);
+            bufferedWriter = new BufferedWriter(fileWriter);
+            for (Target target: targetList){
+                bufferedWriter.write(target.writeToCsv());
+                bufferedWriter.newLine();
+            }
         } catch (IOException e) {
             e.printStackTrace();
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-        } finally {
-            try{
+        }finally {
+            try {
                 bufferedWriter.close();
-            }catch (IOException e){
+            } catch (IOException e) {
                 e.printStackTrace();
             }
         }
