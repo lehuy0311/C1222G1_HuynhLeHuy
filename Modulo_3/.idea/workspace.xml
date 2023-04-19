@@ -20,29 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95d36e58-d3af-492e-b51d-aefc6afa8efe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/controller/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/controller/TeacherController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/model/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/model/Teacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/repository/IStudentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/repository/ITeacherRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/repository/implement/StudentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/repository/implement/TeacherRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/service/IStudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/service/ITeacherService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/service/implement/StudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/service/implement/TeacherService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/ex_bonus/view/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/fruit_management/controller/FruitController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/fruit_management/repository/FruitRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/fruit_management/repository/IFruitRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/fruit_management/service/FruitService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/fruit_management/service/IFruitService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/fruit_management/view/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/out/production/Modulo_2_again/ss5_am/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/out/production/Modulo_2_again/ss5_am/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/out/production/Modulo_2_again/ss6_inheritance/Cylinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/out/production/Modulo_2_again/ss6_inheritance/Cylinder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/fruit_management/model/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss10_list/fruit_management/model/Fruit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss12_java_collection/controller/FruitController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss12_java_collection/model/Fruit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss12_java_collection/repository/FruitRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss12_java_collection/repository/IFruitRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss12_java_collection/service/FruitService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss12_java_collection/service/IFruitService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss12_java_collection/view/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/work_management/common/ReadFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/work_management/common/WriteFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/work_management/controller/WorkController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/work_management/data/Target.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/work_management/model/Target.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/work_management/repository/ITargetRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/work_management/repository/TargetRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/work_management/service/ITargetService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/work_management/service/TargetService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/work_management/view/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/img_backgrounf.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +48,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -99,6 +94,10 @@
       <workItem from="1681377101360" duration="727000" />
       <workItem from="1681529009770" duration="2381000" />
       <workItem from="1681692686283" duration="1863000" />
+      <workItem from="1681720328537" duration="797000" />
+      <workItem from="1681739950151" duration="596000" />
+      <workItem from="1681800062032" duration="911000" />
+      <workItem from="1681876984116" duration="650000" />
     </task>
     <servers />
   </component>
