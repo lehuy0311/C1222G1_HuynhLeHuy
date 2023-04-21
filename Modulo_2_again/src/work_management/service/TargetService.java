@@ -2,6 +2,7 @@ package work_management.service;
 
 import ss5_am.Employee;
 import work_management.common.ReadFile;
+import work_management.common.WriteFile;
 import work_management.model.Target;
 import work_management.repository.ITargetRepository;
 import work_management.repository.TargetRepository;
@@ -62,18 +63,22 @@ public class TargetService implements ITargetService{
     @Override
     public void delete() {
         List<Target> targetList = ReadFile.readFile(PATH);
-        System.out.println("Input id");
-        int id = Integer.parseInt(scanner.nextLine());
+        System.out.println("Input id remove");
+        int idRemove = Integer.parseInt(scanner.nextLine());
         for (int i =0; i<targetList.size();i++){
-            if (targetList.get(i).getId() == id){
+            if (targetList.get(i).getId() == idRemove){
                 System.out.println("Are you sure?");
                 System.out.println("1. Yes");
                 System.out.println("2. No");
                 String choice = scanner.nextLine();
                 if (choice.equals("1")){
                     iTargetRepository.delete(i);
+                    targetList.remove(targetList.get(i));
+                    WriteFile.writeFile(targetList);
                     System.out.println("Delete success!!");
                     return;
+                }else {
+                    System.out.println("Return the menu");
                 }
             }
         }
@@ -122,6 +127,34 @@ public class TargetService implements ITargetService{
         }catch (Exception e){
             System.out.println("Error");
         }
+    }
+
+    @Override
+    public void findById() {
+        System.out.println("input Id want find");
+        int idFind = Integer.parseInt(scanner.nextLine());
+        Target targetFind = iTargetRepository.findById(idFind);
+        System.out.println(targetFind);
+    }
+
+    @Override
+    public void findByName() {
+        System.out.println("Input Name want find");
+        String nameFind = scanner.nextLine();
+        List<Target> result = iTargetRepository.findByName(nameFind);
+        for (int i=0; i<result.size();i++){
+            System.out.println(result.get(i));
+        }
+    }
+
+    @Override
+    public void sortName() {
+        iTargetRepository.sortByName();
+    }
+
+    @Override
+    public void sortMoney() {
+        iTargetRepository.sortByMoney();
     }
 
 }

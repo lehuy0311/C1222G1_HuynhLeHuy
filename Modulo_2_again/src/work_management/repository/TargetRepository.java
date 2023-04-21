@@ -3,8 +3,11 @@ package work_management.repository;
 import work_management.common.ReadFile;
 import work_management.common.WriteFile;
 import work_management.model.Target;
+import work_management.utils.TargetComparator;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class TargetRepository implements ITargetRepository{
@@ -23,9 +26,6 @@ public class TargetRepository implements ITargetRepository{
 
     @Override
     public void delete(int index) {
-//        targetList = ReadFile.readFile(PATH);
-//        targetList.remove(target);
-//        WriteFile.writeFile(PATH, target);
         targetList.remove(index);
     }
 
@@ -37,22 +37,40 @@ public class TargetRepository implements ITargetRepository{
     }
 
     @Override
-    public Target findById(int id) {
+    public Target findById(int idFind) {
+        for(Target target: targetList){
+            if(target.getId() == idFind){
+                return target;
+            }
+        }
         return null;
     }
 
     @Override
-    public List<Target> findByName(String name) {
-        return null;
+    public List<Target> findByName(String nameFind) {
+        List<Target> targetList1 = new ArrayList<>();
+        for (int i =0; i< targetList.size();i++){
+            if(targetList.get(i).getName().contains(nameFind)){
+                targetList1.add(targetList.get(i));
+            }
+        }
+        return targetList1;
     }
 
     @Override
-    public void sortName() {
+    public void sortByName() {
+        Collections.sort(targetList);
+        for (Target target: targetList){
+            System.out.println(target);
+        }
 
     }
 
     @Override
-    public void sortMoney() {
-
+    public void sortByMoney() {
+        Collections.sort(targetList, new TargetComparator());
+        for (Target target : targetList){
+            System.out.println(target);
+        }
     }
 }

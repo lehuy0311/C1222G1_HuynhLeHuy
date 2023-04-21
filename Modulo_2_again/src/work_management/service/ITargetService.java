@@ -5,5 +5,9 @@ public interface ITargetService {
     void add();
     void delete();
     void edit();
+    void findById();
+    void findByName();
+    void sortName();
+    void sortMoney();
 
 }

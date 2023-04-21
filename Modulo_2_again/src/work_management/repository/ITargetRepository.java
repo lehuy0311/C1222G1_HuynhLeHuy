@@ -7,11 +7,11 @@ import java.util.List;
 public interface ITargetRepository {
     List<Target> display();
     void add(List<Target> targetList);
-    void delete(int index);
+    void delete(int idDelete);
     void edit(int index, Target target);
     Target findById(int id);
     List<Target> findByName(String name);
-    void sortName();
-    void sortMoney();
+    void sortByName();
+    void sortByMoney();
 
 }

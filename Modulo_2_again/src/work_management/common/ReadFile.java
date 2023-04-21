@@ -2,7 +2,10 @@ package work_management.common;
 
 import work_management.model.Target;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,13 +15,17 @@ public class ReadFile {
         List<Target> targetList = new ArrayList<>();
         BufferedReader bufferedReader =  null;
         try {
-            bufferedReader = new BufferedReader(new FileReader(PATH));
-            String line ="";
-            while ((line = bufferedReader.readLine()) != null){
+            FileReader fileReader = new FileReader(PATH);
+            bufferedReader = new BufferedReader(fileReader);
+            String line = "";
+
+            while ((line = bufferedReader.readLine()) != null && !line.equals("")) {
                 String[] temp = line.split(",");
-                Target target = new Target(Integer.parseInt(temp[0]), temp[1],temp[2], temp[3],temp[4]);
+                Target target = new Target(Integer.parseInt(temp[0]), temp[1], temp[2], temp[3], temp[4]);
                 targetList.add(target);
             }
+        }catch (NumberFormatException e){
+            e.printStackTrace();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (Exception e){
