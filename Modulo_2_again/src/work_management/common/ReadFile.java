@@ -10,12 +10,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ReadFile {
-    public static final String PATH = "src/work_management/data/Target.csv";
+    public static final String TARGET_FILE_PATH = "src/work_management/data/Target.csv";
     public static List<Target> readFile(String path){
         List<Target> targetList = new ArrayList<>();
         BufferedReader bufferedReader =  null;
         try {
-            FileReader fileReader = new FileReader(PATH);
+            FileReader fileReader = new FileReader(TARGET_FILE_PATH);
             bufferedReader = new BufferedReader(fileReader);
             String line = "";
 

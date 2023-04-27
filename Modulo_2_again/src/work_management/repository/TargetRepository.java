@@ -11,12 +11,12 @@ import java.util.Collections;
 import java.util.List;
 
 public class TargetRepository implements ITargetRepository{
-    public static final String PATH = "src/work_management/data/Target.csv";
+    public static final String TARGET_FILE_PATH = "src/work_management/data/Target.csv";
 
-    public static List<Target> targetList = ReadFile.readFile(PATH);
+    public static List<Target> targetList = ReadFile.readFile(TARGET_FILE_PATH);
     @Override
     public List<Target> display() {
-        return ReadFile.readFile(PATH);
+        return ReadFile.readFile(TARGET_FILE_PATH);
     }
 
     @Override
@@ -27,11 +27,12 @@ public class TargetRepository implements ITargetRepository{
     @Override
     public void delete(int index) {
         targetList.remove(index);
+        WriteFile.writeFile(targetList);
     }
 
     @Override
     public void edit(int index, Target target) {
-        targetList = ReadFile.readFile(PATH);
+        targetList = ReadFile.readFile(TARGET_FILE_PATH);
         targetList.set(index, target);
         WriteFile.writeFile(targetList);
     }

@@ -3,17 +3,16 @@ package work_management.common;
 import work_management.model.Target;
 
 import java.io.BufferedWriter;
-import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 
 public class WriteFile {
-    public static final String PATH = "src/work_management/data/Target.csv";
+    public static final String TARGET_FILE_PATH = "src/work_management/data/Target.csv";
     public static void writeFile(List<Target> targetList){
         BufferedWriter bufferedWriter = null;
         try {
-            FileWriter fileWriter = new FileWriter(PATH);
+            FileWriter fileWriter = new FileWriter(TARGET_FILE_PATH);
             bufferedWriter = new BufferedWriter(fileWriter);
             for (Target target: targetList){
                 bufferedWriter.write(target.writeToCsv());

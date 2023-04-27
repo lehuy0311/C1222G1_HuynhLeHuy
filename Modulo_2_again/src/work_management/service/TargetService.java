@@ -1,8 +1,6 @@
 package work_management.service;
 
-import ss5_am.Employee;
 import work_management.common.ReadFile;
-import work_management.common.WriteFile;
 import work_management.model.Target;
 import work_management.repository.ITargetRepository;
 import work_management.repository.TargetRepository;
@@ -13,7 +11,7 @@ import java.util.Scanner;
 public class TargetService implements ITargetService{
     private ITargetRepository iTargetRepository = new TargetRepository();
     private Scanner scanner = new Scanner(System.in);
-    public static final String PATH = "src/work_management/data/Target.csv";
+    public static final String TARGET_FILE_PATH = "src/work_management/data/Target.csv";
     @Override
     public void getAll() {
         List<Target> targetList = iTargetRepository.display();
@@ -62,7 +60,8 @@ public class TargetService implements ITargetService{
 
     @Override
     public void delete() {
-        List<Target> targetList = ReadFile.readFile(PATH);
+        //List<Target> targetList = ReadFile.readFile(TARGET_FILE_PATH);
+        List<Target> targetList = iTargetRepository.display();
         System.out.println("Input id remove");
         int idRemove = Integer.parseInt(scanner.nextLine());
         for (int i =0; i<targetList.size();i++){
@@ -74,7 +73,7 @@ public class TargetService implements ITargetService{
                 if (choice.equals("1")){
                     iTargetRepository.delete(i);
                     targetList.remove(targetList.get(i));
-                    WriteFile.writeFile(targetList);
+                    //WriteFile.writeFile(targetList);
                     System.out.println("Delete success!!");
                     return;
                 }else {
@@ -87,7 +86,7 @@ public class TargetService implements ITargetService{
 
     @Override
     public void edit() {
-        List<Target> targetList = ReadFile.readFile(PATH);
+        List<Target> targetList = ReadFile.readFile(TARGET_FILE_PATH);
         System.out.println("Input id");
         int id;
         int index;
