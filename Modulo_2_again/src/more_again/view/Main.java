@@ -1,6 +1,6 @@
 package more_again.view;
 
-import more_again.controller.FuramaController;
+import more_again.controllers.FuramaController;
 
 public class Main {
     public static void main(String[] args) {
