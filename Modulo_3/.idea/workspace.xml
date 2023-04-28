@@ -20,14 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95d36e58-d3af-492e-b51d-aefc6afa8efe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/out/production/Modulo_2_again/work_management/common/ReadFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/out/production/Modulo_2_again/work_management/common/ReadFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/out/production/Modulo_2_again/work_management/data/Target.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/out/production/Modulo_2_again/work_management/data/Target.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/out/production/Modulo_2_again/work_management/repository/TargetRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/out/production/Modulo_2_again/work_management/repository/TargetRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/work_management/common/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/work_management/common/ReadFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/work_management/controller/WorkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/work_management/controller/WorkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/work_management/data/Target.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/work_management/data/Target.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/work_management/repository/TargetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/work_management/repository/TargetRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/work_management/service/TargetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/work_management/service/TargetService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/common/read_file/ReadCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/common/read_file/ReadCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/common/read_file/ReadEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/common/read_file/ReadEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/model/Villa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/model/Villa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,6 +86,7 @@
       <workItem from="1681876984116" duration="650000" />
       <workItem from="1681888871503" duration="814000" />
       <workItem from="1681962013045" duration="595000" />
+      <workItem from="1682563472536" duration="1189000" />
     </task>
     <servers />
   </component>
