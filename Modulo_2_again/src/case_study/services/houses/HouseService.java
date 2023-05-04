@@ -11,9 +11,9 @@ import case_study.utils.WriteFileHouse;
 import java.util.*;
 
 public class HouseService implements IHouseService{
-    private static Scanner scanner = new Scanner(System.in);
-    private static IHouseRepository iHouseRepository = new HouseRepository();
-    private static Map<House, Integer> houses = iHouseRepository.getAll();
+    private  Scanner scanner = new Scanner(System.in);
+    private  IHouseRepository iHouseRepository = new HouseRepository();
+    private  Map<House, Integer> houses = iHouseRepository.getAll();
     @Override
     public void displayAllHouses() {
         if(houses.isEmpty()) System.out.println("There is no house in the system!");

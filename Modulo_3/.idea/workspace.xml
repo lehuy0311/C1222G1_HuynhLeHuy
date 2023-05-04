@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,11 +23,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95d36e58-d3af-492e-b51d-aefc6afa8efe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/common/read_file/ReadCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/common/read_file/ReadCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/common/read_file/ReadEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/common/read_file/ReadEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/model/Villa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/model/Villa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_bootstrap_basic/exercise/gallery_basic/gallery_basic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_bootstrap_basic/exercise/gallery_basic/gallery_basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_bootstrap_basic/exercise/landing_page/landing_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_bootstrap_basic/practice/form_login/form_login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_bootstrap_basic/practice/form_login/form_login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/out/production/Modulo_2_again/case_study/data/Employee.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/out/production/Modulo_2_again/case_study/data/Employee.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/out/production/Modulo_2_again/case_study/data/customers.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/out/production/Modulo_2_again/case_study/data/customers.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/out/production/Modulo_2_again/case_study/utils/ReadFileEmployees.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/out/production/Modulo_2_again/case_study/utils/ReadFileEmployees.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/controllers/FurumaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/controllers/FurumaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/data/Employee.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/data/Employee.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/data/customers.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/data/customers.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/repository/customer/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/repository/customer/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/repository/employee/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/repository/employee/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/services/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/services/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/services/houses/HouseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/services/houses/HouseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/services/room/RoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/services/room/RoomService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/services/villa/VillaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/services/villa/VillaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/utils/ReadFileEmployees.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/utils/ReadFileEmployees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/view/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/ex_bonus/Divisors.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ex_bonus/Divisors.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/img_backgrounf.html" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/img_backgrounf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7_website_layout/exercise/layout_rwd/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_website_layout/exercise/layout_rwd/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7_website_layout/exercise/layout_rwd/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_website_layout/exercise/layout_rwd/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,18 +70,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/ADMIN/Downloads/javaee-jsf-231.8109.90/javaee-jsf/lib/javaee-jsf.jar",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\CodeGym\Modulo_3\ss7_website_layout\exercise" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -87,6 +110,8 @@
       <workItem from="1681888871503" duration="814000" />
       <workItem from="1681962013045" duration="595000" />
       <workItem from="1682563472536" duration="1189000" />
+      <workItem from="1682673107984" duration="595000" />
+      <workItem from="1683165127541" duration="18031000" />
     </task>
     <servers />
   </component>
@@ -103,12 +128,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1681205032612">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1681205032612" />
   </component>
 </project>

@@ -11,23 +11,23 @@ import case_study.services.villa.VillaService;
 import java.util.Scanner;
 
 public class FurumaController {
-    private static final Scanner scanner = new Scanner(System.in);
-    private static String input = "";
-    private static IEmployeeService employeeService = new EmployeeService();
-    private static ICustomerService customerService = new CustomerService();
-    private static IRoomService iRoomService = new RoomService();
-    private static IVillaService iVillaService = new VillaService();
-    private static IHouseService iHouseService = new HouseService();
+    private  final Scanner scanner = new Scanner(System.in);
+    private  String input = "";
+    private  IEmployeeService employeeService = new EmployeeService();
+    private  ICustomerService customerService = new CustomerService();
+    private  IRoomService iRoomService = new RoomService();
+    private  IVillaService iVillaService = new VillaService();
+    private  IHouseService iHouseService = new HouseService();
 
-    private static IFacilityService iFacilityService = new FacilityService();
-    private static IBookingService iBookingService = new BookingService();
-    private static IContractService iContractService = new ContractService();
-    private static IPromotionService iPromotionService = new PromotionService();
-    public static void main(String[] args) {
+    private  IFacilityService iFacilityService = new FacilityService();
+    private  IBookingService iBookingService = new BookingService();
+    private  IContractService iContractService = new ContractService();
+    private  IPromotionService iPromotionService = new PromotionService();
+    public  void main(String[] args) {
 
         displayMainMenu();
     }
-    public static void displayMainMenu(){
+    public  void displayMainMenu(){
 
         do{
             System.out.println("====================================");
@@ -53,7 +53,7 @@ public class FurumaController {
     }
 
 
-    public static void displayEmployeeManagementMenu(){
+    public  void displayEmployeeManagementMenu(){
         do {
             System.out.println("===================================");
             System.out.println("**** Employee Management *****");
@@ -75,7 +75,7 @@ public class FurumaController {
     }
 
 
-    public static void displayCustomerManagementMenu(){
+    public  void displayCustomerManagementMenu(){
         do {
             System.out.println("===================================");
             System.out.println("**** Customer Management *****");
@@ -97,7 +97,7 @@ public class FurumaController {
     }
 
 
-    public static void displayFacilityManagementMenu(){
+    public  void displayFacilityManagementMenu(){
         do {
             System.out.println("===================================");
             System.out.println("**** Facility Management *****");
@@ -119,7 +119,7 @@ public class FurumaController {
     }
 
 
-    public static void displayBookingManagementMenu(){
+    public  void displayBookingManagementMenu(){
         do {
             System.out.println("===================================");
             System.out.println("**** Booking Management *****");
@@ -145,7 +145,7 @@ public class FurumaController {
     }
 
 
-    public static void displayPromotionManagementMenu(){
+    public  void displayPromotionManagementMenu(){
         do {
             System.out.println("===================================");
             System.out.println("**** Promotion Management *****");
@@ -164,7 +164,7 @@ public class FurumaController {
         } while (!input.equals("3"));
     }
 
-    public static void displayAddNewFacilityMenu(){
+    public  void displayAddNewFacilityMenu(){
         do {
             System.out.println("===================================");
             System.out.println("**** Add New Facility *****");
@@ -184,9 +184,6 @@ public class FurumaController {
             }
         } while (!input.equals("4"));
     }
-
-
-
 
 }
 

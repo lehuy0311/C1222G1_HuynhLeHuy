@@ -13,9 +13,9 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class VillaService implements IVillaService{
-    private static Scanner scanner = new Scanner(System.in);
-    private static IVillaRepository iVillaRepository = new VillaRepository();
-    private static Map<Villa, Integer> villas = iVillaRepository.getAll();
+    private  Scanner scanner = new Scanner(System.in);
+    private  IVillaRepository iVillaRepository = new VillaRepository();
+    private  Map<Villa, Integer> villas = iVillaRepository.getAll();
 
     @Override
     public void displayAllVillas() {

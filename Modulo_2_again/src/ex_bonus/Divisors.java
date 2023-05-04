@@ -3,7 +3,7 @@ package ex_bonus;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Divisors {
+public class    Divisors {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập số bạn muốn tìm ước: ");

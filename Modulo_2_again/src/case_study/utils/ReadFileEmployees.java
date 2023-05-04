@@ -26,7 +26,8 @@ public class ReadFileEmployees {
                 bufferedReader = new BufferedReader(new FileReader(PATH));
                 while ((line = bufferedReader.readLine()) != null) {
                     temp = line.split(",");
-                    employee = new Employee(Integer.parseInt(temp[0]), temp[1], Utils.parseStringToLocalDate(temp[2]), Boolean.parseBoolean(temp[3]),
+                    employee = new Employee(Integer.parseInt(temp[0]), temp[1], Utils.parseStringToLocalDate(temp[2]),
+                            Boolean.parseBoolean(temp[3]),
                             temp[4], temp[5], Integer.parseInt(temp[6]),
                             Enum.valueOf(EducationBackground.class, temp[7]),
                             Enum.valueOf(Title.class, temp[8]), Double.parseDouble(temp[9]));

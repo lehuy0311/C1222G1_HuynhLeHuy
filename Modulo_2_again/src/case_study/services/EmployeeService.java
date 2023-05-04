@@ -15,10 +15,10 @@ import java.util.List;
 import java.util.Scanner;
 
 public class EmployeeService implements IEmployeeService {
-    private static final String PATH = "src/case_study/data/employee.csv";
-    private static Scanner scanner = new Scanner(System.in);
-    private static IEmployeeRepository iEmployeeRepository = new EmployeeRepository();
-    private static List<Employee> employees = iEmployeeRepository.getAll();
+    private  final String PATH = "src/case_study/data/employee.csv";
+    private  Scanner scanner = new Scanner(System.in);
+    private  IEmployeeRepository iEmployeeRepository = new EmployeeRepository();
+    private  List<Employee> employees = iEmployeeRepository.getAll();
 
     public void add() {
         Employee newEmployee = getInfoAndReturnAnEmployee(true);

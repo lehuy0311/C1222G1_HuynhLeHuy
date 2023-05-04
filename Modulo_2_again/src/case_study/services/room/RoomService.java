@@ -13,9 +13,9 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class RoomService implements IRoomService{
-    private static Scanner scanner = new Scanner(System.in);
-    private static IRoomRepository iRoomRepository = new RoomRepository();
-    private static Map<Room, Integer> rooms = iRoomRepository.getAll();
+    private  Scanner scanner = new Scanner(System.in);
+    private  IRoomRepository iRoomRepository = new RoomRepository();
+    private  Map<Room, Integer> rooms = iRoomRepository.getAll();
     @Override
     public void displayAllRooms() {
         if(rooms.isEmpty()) System.out.println("There is no room in the system!");

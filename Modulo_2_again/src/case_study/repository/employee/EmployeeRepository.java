@@ -9,7 +9,7 @@ import java.util.List;
 
 public class EmployeeRepository implements IEmployeeRepository {
 
-    private static List<Employee> employees = ReadFileEmployees.read();
+    private  List<Employee> employees = ReadFileEmployees.read();
     @Override
     public List<Employee> getAll() {
         return ReadFileEmployees.read();

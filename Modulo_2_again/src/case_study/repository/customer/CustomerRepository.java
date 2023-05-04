@@ -7,7 +7,7 @@ import case_study.utils.WriteFileCustomers;
 import java.util.List;
 
 public class CustomerRepository implements ICustomerRepository {
-    public static List<Customer> customers = ReadFileCustomers.read();
+    public  List<Customer> customers = ReadFileCustomers.read();
 
     @Override
     public List<Customer> getAll() {
