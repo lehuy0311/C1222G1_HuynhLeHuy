@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f7117fa4-cc92-4181-a023-67a2d772d112" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../Modulo_2_again/src/algorithm/CharInString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Modulo_2_again/src/algorithm/PrimeDivisiableThree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Modulo_2_again/src/algorithm/ShowFibonaci.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Modulo_2_again/src/algorithm/SumOfPrimes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Modulo_2_again/src/ss19_string_regex/CheckEmail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Modulo_2_again/src/ss19_string_regex/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Modulo_2_again/out/production/Modulo_2_again/case_study/controllers/FurumaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Modulo_2_again/out/production/Modulo_2_again/case_study/controllers/FurumaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Modulo_2_again/out/production/Modulo_2_again/case_study/repository/customer/CustomerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Modulo_2_again/out/production/Modulo_2_again/case_study/repository/customer/CustomerRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Modulo_2_again/out/production/Modulo_2_again/case_study/repository/employee/EmployeeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Modulo_2_again/out/production/Modulo_2_again/case_study/repository/employee/EmployeeRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Modulo_2_again/out/production/Modulo_2_again/case_study/services/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Modulo_2_again/out/production/Modulo_2_again/case_study/services/EmployeeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Modulo_2_again/out/production/Modulo_2_again/case_study/services/houses/HouseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Modulo_2_again/out/production/Modulo_2_again/case_study/services/houses/HouseService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Modulo_2_again/out/production/Modulo_2_again/case_study/services/room/RoomService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Modulo_2_again/out/production/Modulo_2_again/case_study/services/room/RoomService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Modulo_2_again/out/production/Modulo_2_again/case_study/services/villa/VillaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Modulo_2_again/out/production/Modulo_2_again/case_study/services/villa/VillaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Modulo_2_again/out/production/Modulo_2_again/case_study/view/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Modulo_2_again/out/production/Modulo_2_again/case_study/view/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/.gradle/7.5.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/.gradle/7.5.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/.gradle/7.5.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo1/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo1/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/test/untitled/src/main/java/org/example/Main.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="2PVQXKmuDnTaWzq2jjkzzHVkmjU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.73" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.73" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Gradle : com.example : demo3-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="92886a7a-22b6-47ae-b65f-30d52f50eff8" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53865" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : com.example : demo3-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f7117fa4-cc92-4181-a023-67a2d772d112" name="Changes" comment="" />
+      <created>1683539808645</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683539808645</updated>
+      <workItem from="1683539809701" duration="339000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
