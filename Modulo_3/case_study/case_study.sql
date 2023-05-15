@@ -189,13 +189,18 @@ values 	(5,2,4),
         (1,1,3),
         (2,1,2),
         (2,12,2);
-
+        
+        
+-- Ex2:
 select * from nhan_vien as nv
 where (nv.ho_ten like "H%") or (nv.ho_ten like "T%") or (nv.ho_ten like "K%") and char_length(nv.ho_ten) < 15;
 
-select *, date_format(from_days(datediff(now(), ngay_sinh)), '%Y') + 0 as tuoi from khach_hang
-where (date_format(from_days(datediff(now(), ngay_sinh)), '%Y') + 0 between 18 and 50) and dia_chi like '%Đà Nẵng' or dia_chi like '%Quảng Trị';
+-- Ex3:
+select * , year(current_date()) - year(date_of_birth) as 'age' from customer
+where year(current_date()) - year(date_of_birth) > 18 and year(current_date()) - year(date_of_birth) < 50
+and (address like ('%Đà Nẵng') or address like ('%Quảng Trị'));
 
+-- Ex4:
 select kh.ma_khach_hang, kh.ho_ten,kh.dia_chi, kh.so_dien_thoai, count(hd.ma_khach_hang) as so_lan_dat_phong
 from khach_hang kh
 join loai_khach lk on lk.ma_loai_khach = kh.ma_loai_khach and lk.ma_loai_khach = '1'
@@ -203,16 +208,6 @@ join hop_dong hd on hd.ma_khach_hang = kh.ma_khach_hang
 group by kh.ma_khach_hang
 order by so_lan_dat_phong;
 
-create view ss5 as 
-select kh.ma_khach_hang, kh.ho_ten, lk.ten_loai_khach, ifnull(hd.ma_hop_dong, 0) as ma_hop_dong, ifnull(dv.ten_dich_vu, 0) as ten_dich_vu, ifnull(hd.ngay_lam_hop_dong, 0) as ngay_lam_hop_dong, ifnull(hd.ngay_ket_thuc, 0) as ngay_ket_thuc, sum((ifnull(dv.chi_phi_thue, 0) + ifnull(hdct.so_luong, 0) * ifnull(dvdk.gia, 0))) as tong_tien from khach_hang as kh
-left join hop_dong as hd on kh.ma_khach_hang = hd.ma_khach_hang
-left join loai_khach as lk on lk.ma_loai_khach = kh.ma_loai_khach
-left join dich_vu as dv on dv.ma_dich_vu = hd.ma_dich_vu
-left join hop_dong_chi_tiet as hdct on hdct.ma_hop_dong = hd.ma_hop_dong
-left join dich_vu_di_kem as dvdk on dvdk.ma_dich_vu_di_kem = hdct.ma_dich_vu_di_kem
-group by hd.ma_hop_dong
-order by ma_khach_hang; 
-select * from ss5;
 
 
 
