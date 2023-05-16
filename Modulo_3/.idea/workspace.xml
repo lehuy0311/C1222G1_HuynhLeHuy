@@ -23,8 +23,107 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95d36e58-d3af-492e-b51d-aefc6afa8efe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss9_overview_web/exercise/demo6/src/main/java/com/example/demo6/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo6/src/main/java/com/example/demo6/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_overview_web/exercise/demo6/src/main/java/com/example/demo6/ProductServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo/src/main/java/com/example/demo/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo1/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo1/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo1/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo1/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo1/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo1/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo1/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo1/src/main/java/com/example/demo1/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo1/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo1/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo2/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo2/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo2/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo2/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo2/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo2/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo2/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo2/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo2/src/main/java/com/example/demo2/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo2/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo2/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo3/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo3/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo3/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo3/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo3/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo3/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo3/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo3/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo3/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo3/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo3/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo4/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo4/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo4/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo4/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo4/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo4/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo4/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo4/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo4/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo4/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo4/src/main/java/com/example/demo4/Hello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo4/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo4/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo5/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo5/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo5/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo5/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo5/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo5/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo5/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo5/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo5/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo5/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo5/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo5/src/main/java/com/example/demo5/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo5/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo5/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo6/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo6/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo6/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo6/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo6/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo6/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo6/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo6/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo6/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo6/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo6/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo6/src/main/java/com/example/demo6/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo6/src/main/java/com/example/demo6/ProductServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo6/src/main/java/com/example/demo6/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo6/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo6/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_overview_web/exercise/demo6/src/main/webapp/index1.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,9 +154,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/CodeGym/Modulo_3",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\CodeGym\Modulo_3\ss7_website_layout\exercise" />
@@ -149,7 +256,7 @@
       </method>
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -191,11 +298,12 @@
       <workItem from="1683623744425" duration="14000" />
       <workItem from="1683876850359" duration="66000" />
       <workItem from="1683882208637" duration="18000" />
+      <workItem from="1684132832420" duration="562000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -207,6 +315,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

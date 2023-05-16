@@ -23,6 +23,13 @@ create table vat_tu(
     sdt varchar(20)
  );
  
+ create table so_dien_thoai(
+	ma_so_dien_thoai int primary key auto_increment,
+	so_dien_thoai varchar(20),
+	ma_ncc int ,
+	foreign key (ma_ncc) references nha_cung_cap(ma_ncc)
+);
+ 
  create table don_dat_hang(
 	so_don_hang int primary key auto_increment,
     ngay_dat_hang date,
