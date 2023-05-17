@@ -204,28 +204,56 @@ and (dia_chi like ('%Đà Nẵng') or dia_chi like ('%Quảng Trị'));
 -- Ex4:
 select kh.ma_khach_hang, kh.ho_ten,kh.dia_chi, kh.so_dien_thoai, count(hd.ma_khach_hang) as so_lan_dat_phong
 from khach_hang kh
-join loai_khach lk on lk.ma_loai_khach = kh.ma_loai_khach and lk.ma_loai_khach = '1'
+-- join loai_khach lk on lk.ma_loai_khach = kh.ma_loai_khach and lk.ma_loai_khach = '1'
+join loai_khach lk on lk.ma_loai_khach = kh.ma_loai_khach and lk.ten_loai_khach = 'Diamond'
 join hop_dong hd on hd.ma_khach_hang = kh.ma_khach_hang
 group by kh.ma_khach_hang
 order by so_lan_dat_phong;
 
 -- Ex5:
-select kh.ma_khach_hang, kh.ho_ten, lk.ten_loai_khach, ifnull(hd.ma_hop_dong, 0) as ma_hop_dong, ifnull(dv.ten_dich_vu, 0) as ten_dich_vu, ifnull(hd.ngay_lam_hop_dong, 0) as ngay_lam_hop_dong, ifnull(hd.ngay_ket_thuc, 0) as ngay_ket_thuc, sum((ifnull(dv.chi_phi_thue, 0) + ifnull(hdct.so_luong, 0) * ifnull(dvdk.gia, 0))) as tong_tien
+select 	kh.ma_khach_hang, kh.ho_ten, lk.ten_loai_khach, hd.ma_hop_dong as ma_hop_dong, dv.ten_dich_vu as ten_dich_vu,
+		hd.ngay_lam_hop_dong as ngay_lam_hop_dong, hd.ngay_ket_thuc as ngay_ket_thuc, 
+        sum((ifnull(dv.chi_phi_thue, 0) + ifnull(hdct.so_luong, 0) * ifnull(dvdk.gia, 0))) as tong_tien
 from khach_hang as kh
-left join hop_dong as hd 
-on kh.ma_khach_hang = hd.ma_khach_hang
-left join loai_khach as lk 
-on lk.ma_loai_khach = kh.ma_loai_khach
-left join dich_vu as dv 
-on dv.ma_dich_vu = hd.ma_dich_vu
-left join hop_dong_chi_tiet as hdct 
-on hdct.ma_hop_dong = hd.ma_hop_dong
-left join dich_vu_di_kem as dvdk 
-on dvdk.ma_dich_vu_di_kem = hdct.ma_dich_vu_di_kem
-group by hd.ma_hop_dong
-order by ma_khach_hang; 
+left join hop_dong as hd on kh.ma_khach_hang = hd.ma_khach_hang
+left join loai_khach as lk on lk.ma_loai_khach = kh.ma_loai_khach
+left join dich_vu as dv on dv.ma_dich_vu = hd.ma_dich_vu
+left join hop_dong_chi_tiet as hdct on hdct.ma_hop_dong = hd.ma_hop_dong
+left join dich_vu_di_kem as dvdk on dvdk.ma_dich_vu_di_kem = hdct.ma_dich_vu_di_kem
+group by kh.ma_khach_hang, hd.ma_hop_dong;
+-- order by kh.ma_khach_hang;
 
+-- Ex6:
+select dv.ma_dich_vu, dv.ten_dich_vu, dv.dien_tich, dv.chi_phi_thue, ldv.ten_loai_dich_vu 
+from dich_vu as dv
+join loai_dich_vu as ldv on ldv.ma_loai_dich_vu = dv.ma_loai_dich_vu
+where ma_dich_vu not in (select ma_dich_vu from hop_dong where (month(ngay_lam_hop_dong) between 1 and 3) and year(ngay_lam_hop_dong))
+order by dien_tich desc;
 
+-- EX7:  
+select dv.ma_dich_vu, dv.ten_dich_vu, dv.dien_tich, dv.so_nguoi_toi_da, dv.chi_phi_thue, ldv.ten_loai_dich_vu 
+from dich_vu as dv
+join loai_dich_vu as ldv on ldv.ma_loai_dich_vu = dv.ma_loai_dich_vu
+where ma_dich_vu not in (select ma_dich_vu from hop_dong where year(ngay_lam_hop_dong) = 2021) 
+and ma_dich_vu in(select ma_dich_vu from hop_dong where year(ngay_lam_hop_dong) = 2020);
+
+-- Ex8: 
+select ho_ten from khach_hang group by ho_ten;
+
+select distinct ho_ten from khach_hang;
+
+-- Ex9: 
+select month(ngay_lam_hop_dong) as thang, count(month(ngay_lam_hop_dong)) as so_luong_khach_hang 
+from hop_dong 
+where year(ngay_lam_hop_dong) = 2021
+group by month(ngay_lam_hop_dong)
+order by month(ngay_lam_hop_dong);
+
+-- Ex10: 
+select hd.ma_hop_dong, hd.ngay_lam_hop_dong, hd.ngay_ket_thuc, hd.tien_dat_coc, ifnull(sum(hdct.so_luong), 0) as so_luong_dich_vu_di_kem
+from hop_dong as hd
+left join hop_dong_chi_tiet as hdct on hdct.ma_hop_dong = hd.ma_hop_dong
+group by hd.ma_hop_dong;
 
 
 
