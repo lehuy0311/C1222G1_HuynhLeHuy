@@ -198,11 +198,12 @@ where (nv.ho_ten like "H%") or (nv.ho_ten like "T%") or (nv.ho_ten like "K%") an
 
 -- Ex3:
 select * , year(current_date()) - year(ngay_sinh) as 'age' from khach_hang
-where year(current_date()) - year(ngay_sinh) > 18 and year(current_date()) - year(ngay_sinh) < 50
+where year(current_date()) - year(ngay_sinh) > 18 
+and year(current_date()) - year(ngay_sinh) < 50
 and (dia_chi like ('%Đà Nẵng') or dia_chi like ('%Quảng Trị'));
 
 -- Ex4:
-select kh.ma_khach_hang, kh.ho_ten,kh.dia_chi, kh.so_dien_thoai, count(hd.ma_khach_hang) as so_lan_dat_phong
+select kh.ma_khach_hang, kh.ho_ten, kh.so_dien_thoai, count(hd.ma_khach_hang) as so_lan_dat_phong
 from khach_hang kh
 -- join loai_khach lk on lk.ma_loai_khach = kh.ma_loai_khach and lk.ma_loai_khach = '1'
 join loai_khach lk on lk.ma_loai_khach = kh.ma_loai_khach and lk.ten_loai_khach = 'Diamond'
@@ -223,24 +224,37 @@ left join dich_vu_di_kem as dvdk on dvdk.ma_dich_vu_di_kem = hdct.ma_dich_vu_di_
 group by kh.ma_khach_hang, hd.ma_hop_dong;
 -- order by kh.ma_khach_hang;
 
--- Ex6:
+-- Ex6: Hiển thị ma_dich_vu, ten_dich_vu, dien_tich, chi_phi_thue, ten_loai_dich_vu 
+-- của tất cả các loại dịch vụ chưa từng được khách hàng thực hiện đặt từ quý 1 của năm 2021 (Quý 1 là tháng 1, 2, 3).
 select dv.ma_dich_vu, dv.ten_dich_vu, dv.dien_tich, dv.chi_phi_thue, ldv.ten_loai_dich_vu 
 from dich_vu as dv
 join loai_dich_vu as ldv on ldv.ma_loai_dich_vu = dv.ma_loai_dich_vu
-where ma_dich_vu not in (select ma_dich_vu from hop_dong where (month(ngay_lam_hop_dong) between 1 and 3) and year(ngay_lam_hop_dong))
-order by dien_tich desc;
+where ma_dich_vu not in
+ (select ma_dich_vu from hop_dong 
+  where (month(ngay_lam_hop_dong) between 1 and 3) and year(ngay_lam_hop_dong) = 2021);
+-- order by dien_tich desc;
 
--- EX7:  
+-- EX7:  7.	Hiển thị thông tin ma_dich_vu, ten_dich_vu, dien_tich, so_nguoi_toi_da, chi_phi_thue, ten_loai_dich_vu 
+-- của tất cả các loại dịch vụ đã từng được khách hàng đặt phòng trong năm 2020 nhưng chưa từng được khách hàng đặt phòng trong năm 2021.
 select dv.ma_dich_vu, dv.ten_dich_vu, dv.dien_tich, dv.so_nguoi_toi_da, dv.chi_phi_thue, ldv.ten_loai_dich_vu 
 from dich_vu as dv
 join loai_dich_vu as ldv on ldv.ma_loai_dich_vu = dv.ma_loai_dich_vu
-where ma_dich_vu not in (select ma_dich_vu from hop_dong where year(ngay_lam_hop_dong) = 2021) 
-and ma_dich_vu in(select ma_dich_vu from hop_dong where year(ngay_lam_hop_dong) = 2020);
+where dv.ma_dich_vu not in (
+							select hd.ma_dich_vu from hop_dong hd where year(ngay_lam_hop_dong) = 2021
+                            )
+	and dv.ma_dich_vu in (
+						select hd.ma_dich_vu from hop_dong hd where year(ngay_lam_hop_dong) = 2020
+                        )
+group by dv.ma_dich_vu;
 
 -- Ex8: 
 select ho_ten from khach_hang group by ho_ten;
 
 select distinct ho_ten from khach_hang;
+
+select ho_ten from khach_hang
+union
+select ho_ten from khach_hang;
 
 -- Ex9: 
 select month(ngay_lam_hop_dong) as thang, count(month(ngay_lam_hop_dong)) as so_luong_khach_hang 
@@ -254,6 +268,68 @@ select hd.ma_hop_dong, hd.ngay_lam_hop_dong, hd.ngay_ket_thuc, hd.tien_dat_coc, 
 from hop_dong as hd
 left join hop_dong_chi_tiet as hdct on hdct.ma_hop_dong = hd.ma_hop_dong
 group by hd.ma_hop_dong;
+
+-- Ex10 extra:
+select hd.ma_hop_dong, hd.ngay_lam_hop_dong, hd.ngay_ket_thuc, hd.tien_dat_coc, group_concat(dvdk.ten_dich_vu_di_kem),
+ifnull(sum(hdct.so_luong), 0) as so_luong_dich_vu_di_kem
+from hop_dong as hd
+left join hop_dong_chi_tiet as hdct on hdct.ma_hop_dong = hd.ma_hop_dong
+join dich_vu_di_kem dvdk on dvdk.ma_dich_vu_di_kem = hdct.ma_dich_vu_di_kem
+group by hd.ma_hop_dong;
+
+
+-- Ex11:
+select dvdk.ma_dich_vu_di_kem, dvdk.ten_dich_vu_di_kem 
+from dich_vu_di_kem dvdk
+join hop_dong_chi_tiet hdct on hdct.ma_dich_vu_di_kem = dvdk.ma_dich_vu_di_kem
+join hop_dong hd on hd.ma_hop_dong = hdct.ma_hop_dong
+join khach_hang kh on kh.ma_khach_hang = hd.ma_khach_hang
+where kh.dia_chi like ("%Vinh") or kh.dia_chi like ("%Quảng Ngãi")
+and kh.ma_loai_khach = "1";
+
+-- Ex12:
+select hd.ma_hop_dong, nv.ho_ten, kh.ho_ten, kh.so_dien_thoai,dv.ma_dich_vu, dv.ten_dich_vu, ifnull(sum(hdct.so_luong),0) as so_luong_dich_vu_di_kem, hd.tien_dat_coc
+from hop_dong hd
+left join nhan_vien nv on nv.ma_nhan_vien = hd.ma_nhan_vien
+left join khach_hang kh on kh.ma_khach_hang = hd.ma_khach_hang
+left join dich_vu dv on dv.ma_dich_vu = hd.ma_dich_vu
+left join hop_dong_chi_tiet hdct on hdct.ma_hop_dong = hd.ma_hop_dong
+where ((month(ngay_lam_hop_dong) between 10 and 12) and year(ngay_lam_hop_dong) = 2020)
+and month(ngay_lam_hop_dong) not in ((month(ngay_lam_hop_dong) between 1 and 6) and year(ngay_lam_hop_dong) = 2021)
+-- where hd.ma_hop_dong in ((month(ngay_lam_hop_dong) between 10 and 12) and year(ngay_lam_hop_dong) = 2020)
+-- and hd.ma_hop_dong not in ((month(ngay_lam_hop_dong) between 1 and 6) and year(ngay_lam_hop_dong) = 2021)
+group by hd.ma_hop_dong;
+
+-- Ex13:
+select dvdk.ma_dich_vu_di_kem, dvdk.ten_dich_vu_di_kem, ifnull(sum(hdct.so_luong),0) as so_luong_dich_vu_di_kem
+from dich_vu_di_kem dvdk
+left join hop_dong_chi_tiet hdct on hdct.ma_dich_vu_di_kem = dvdk.ma_dich_vu_di_kem
+group by dvdk.ma_dich_vu_di_kem;
+
+--  Ex14:
+select hdct.ma_hop_dong, ldv.ten_loai_dich_vu, dvdk.ten_dich_vu_di_kem, 1 as so_lan_su_dung 
+from hop_dong_chi_tiet as hdct
+join dich_vu_di_kem as dvdk on hdct.ma_dich_vu_di_kem = dvdk.ma_dich_vu_di_kem
+join hop_dong as hd on hd.ma_hop_dong = hdct.ma_hop_dong
+join dich_vu as dv on dv.ma_dich_vu = hd.ma_dich_vu
+join loai_dich_vu as ldv on ldv.ma_loai_dich_vu = dv.ma_loai_dich_vu 
+group by hdct.ma_hop_dong_chi_tiet
+having count(hdct.ma_dich_vu_di_kem) = 1;
+
+-- Ex15:
+select nv.ma_nhan_vien, nv.ho_ten, td.ten_trinh_do, vt.ten_vi_tri, nv.so_dien_thoai, nv.dia_chi from nhan_vien as nv
+join hop_dong as hd on hd.ma_nhan_vien = nv.ma_nhan_vien 
+and (year(hd.ngay_lam_hop_dong) between 2020 and 2021)
+join trinh_do as td on td.ma_trinh_do = nv.ma_trinh_do
+join vi_tri as vt on vt.ma_vi_tri = nv.ma_vi_tri
+group by hd.ma_nhan_vien
+having count(hd.ma_nhan_vien) <= 3
+order by hd.ma_nhan_vien;
+
+
+
+
+
 
 
 
