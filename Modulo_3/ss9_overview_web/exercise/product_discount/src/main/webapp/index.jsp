@@ -3,17 +3,22 @@
 <html>
 <head>
   <title>JSP - Hello World</title>
+  <style>
+    input{
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
-<form action="/index" method="post">
-  Product Description :
-  <input type="text" name = "nameProduct" > <br>
-  List price :
-  <input type="number" name = "price" > <br>
-  Discount Percent :
-  <input type="number" name = "discount" >
-  <button type="submit"> result </button>
-
+<form action="/display-discount" method="post">
+  <h2>Product Discount Calculator</h2>
+  <input type="text" name="ProductDescription" placeholder="Product Description">
+  <br>
+  <input type="text" name="ListPrice" placeholder="List Price">
+  <br>
+  <input type="text" name="DiscountPercent" placeholder="Discount Percent">
+  <br>
+  <input type="submit" id="elm-btn" value=" Calculate" >
 </form>
 </body>
 </html>

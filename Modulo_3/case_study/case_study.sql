@@ -326,6 +326,47 @@ group by hd.ma_nhan_vien
 having count(hd.ma_nhan_vien) <= 3
 order by hd.ma_nhan_vien;
 
+-- 16. Xóa những Nhân viên chưa từng lập được hợp đồng nào từ năm 2019 đến năm 2021 -------------------
+-- create or replace view ss16 as 
+select * from nhan_vien where ma_nhan_vien in (
+			select ma_nhan_vien from hop_dong as hd where year(hd.ngay_lam_hop_dong) between 2019 and 2021
+    );
+-- select * from ss16;
+
+-- 17. Cập nhật khách hàng có ten_loai_khach Platinum -> Diamond
+-- chỉ cập nhật khách hàng đã từng đặt phòng với Tổng Tiền thanh toán trong 2021 là lớn hơn 10tr ------
+-- create or replace view ss17 as
+select kh.ma_khach_hang, kh.ho_ten, 1 as loai_khach from khach_hang as kh
+join hop_dong as hd on hd.ma_khach_hang = kh.ma_khach_hang and year(hd.ngay_lam_hop_dong) = 2021
+join hop_dong_chi_tiet as hdct on hdct.ma_hop_dong = hd.ma_hop_dong
+join dich_vu_di_kem as dvdk on dvdk.ma_dich_vu_di_kem = hdct.ma_dich_vu_di_kem 
+join dich_vu as dv on hd.ma_dich_vu = dv.ma_dich_vu
+join  loai_khach as lk on kh.ma_loai_khach = lk.ma_loai_khach and lk.ma_loai_khach = 2
+having sum((ifnull(dv.chi_phi_thue, 0) + ifnull(hdct.so_luong, 0) * ifnull(dvdk.gia, 0))) > 10000000;
+-- select * from ss17;
+
+-- 18.	Xóa những khách hàng có hợp đồng trước năm 2021 (chú ý ràng buộc giữa các bảng) --------------
+create or replace view ss18 as 
+select ma_khach_hang from khach_hang where ma_khach_hang in (select kh.ma_khach_hang from khach_hang as kh 
+join hop_dong as hd on kh.ma_khach_hang = hd.ma_khach_hang and year(hd.ngay_lam_hop_dong) < 2021); 
+delete from hop_dong_chi_tiet as hdct where hd.ma_hop_dong in (select ma_khach_hang from ss18);
+delete from hop_dong as hd where hd.ma_khach_hang in (select ma_khach_hang from ss18);
+delete from khach_hang as kh where hd.ma_khach_hang in (select ma_khach_hang from ss18);
+
+-- 19. Cập nhật giá cho các dịch vụ đi kèm được sử dụng trên 10 lần trong năm 2020 lên gấp đôi -------
+-- create or replace view ss19 as
+select dvdk.ma_dich_vu_di_kem, dvdk.ten_dich_vu_di_kem, dvdk.gia * 2 as gia_sau_khi_tang from hop_dong as hd 
+join hop_dong_chi_tiet as hdct on hd.ma_hop_dong = hdct.ma_hop_dong and hdct.so_luong > 10
+join dich_vu_di_kem as dvdk on dvdk.ma_dich_vu_di_kem = hdct.ma_dich_vu_di_kem
+where year(hd.ngay_lam_hop_dong) = 2020;
+-- select * from ss19;
+
+-- 20.	Hiển thị thông tin của tất cả các nhân viên và khách hàng có trong hệ thống ------------------
+select nv.ma_nhan_vien, nv.ho_ten, nv.email, nv.so_dien_thoai, nv.ngay_sinh, nv.dia_chi from nhan_vien as nv 
+union all
+select nv.ma_nhan_vien, nv.ho_ten, nv.email, nv.so_dien_thoai, nv.ngay_sinh, nv.dia_chi from nhan_vien as nv;
+
+
 
 
 
