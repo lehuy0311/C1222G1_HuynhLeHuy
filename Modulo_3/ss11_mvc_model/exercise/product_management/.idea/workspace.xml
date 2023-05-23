@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d18f1f5-4767-47d5-a914-de705b19d37d" name="Changes" comment="" />
+    <list default="true" id="1d18f1f5-4767-47d5-a914-de705b19d37d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../C0223G1-Repo-BE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +57,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/CodeGym/Modulo_3/ss11_mvc_model/exercise/product_management",
+    "last_opened_file_path": "E:/C0223G1-Repo-BE",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -95,7 +98,8 @@
       <updated>1684770816244</updated>
       <workItem from="1684770817269" duration="186000" />
       <workItem from="1684772277159" duration="6458000" />
-      <workItem from="1684832889929" duration="847000" />
+      <workItem from="1684832889929" duration="1475000" />
+      <workItem from="1684834520346" duration="395000" />
     </task>
     <servers />
   </component>
