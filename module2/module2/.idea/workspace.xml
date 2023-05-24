@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="752725df-4b6f-45a4-9434-474497edb183" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Modulo_2_again/src/case_study/common/read_file/ReadCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Modulo_2_again/src/case_study/common/read_file/ReadCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo_2_again/src/case_study/common/read_file/ReadEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Modulo_2_again/src/case_study/common/read_file/ReadEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo_2_again/src/case_study/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Modulo_2_again/src/case_study/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo_2_again/src/case_study/model/Villa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Modulo_2_again/src/case_study/model/Villa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modulo_3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Modulo_3/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LlCMpXNv58eBzB9t1vri5Nq4Pp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "E:/CodeGym/module2",
+    "settings.editor.selected.configurable": "preferences.editor"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.more_again.view.Main">
+    <configuration name="CopyBinary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss17_binary_file_serialization.bai_tap.copy_binary.CopyBinary" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss17_binary_file_serialization.bai_tap.copy_binary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IncreaseHeight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="giai_thuat.IncreaseHeight" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="giai_thuat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss17_binary_file_serialization.bai_tap.product.view.Main" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss17_binary_file_serialization.bai_tap.product.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="case_study.view.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="case_study.view.Main" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="case_study.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="more_again.view.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="more_again.view.Main" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="more_again.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.more_again.view.Main" />
+        <item itemvalue="Application.case_study.view.Main" />
+        <item itemvalue="Application.IncreaseHeight" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.CopyBinary" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="752725df-4b6f-45a4-9434-474497edb183" name="Changes" comment="" />
+      <created>1676436237830</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676436237830</updated>
+    </task>
+    <servers />
+  </component>
+</project>

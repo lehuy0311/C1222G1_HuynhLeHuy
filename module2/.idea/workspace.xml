@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fe4d6d55-1cfa-47a2-bb60-7ef1c9534e1d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Modulo_2_again/src/case_study/controllers/FuramaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/out/production/Modulo_2_again/more_again/controller/FuramaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/out/production/Modulo_2_again/more_again/controller/FuramaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/out/production/Modulo_2_again/more_again/data/Employee.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/out/production/Modulo_2_again/more_again/data/Employee.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/more_again/controller/FuramaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/more_again/controllers/FuramaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/more_again/data/Employee.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/more_again/data/Employee.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/more_again/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/more_again/services/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/more_again/service/IEmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/more_again/services/IEmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/more_again/service/impl/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/more_again/services/impl/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/more_again/service/impl/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/more_again/services/impl/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/more_again/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/more_again/view/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Ntni74bHYChL3BUAmsNuO0v0mE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "E:/CodeGym/Modulo_2_again"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fe4d6d55-1cfa-47a2-bb60-7ef1c9534e1d" name="Changes" comment="" />
+      <created>1680492369867</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680492369867</updated>
+    </task>
+    <servers />
+  </component>
+</project>

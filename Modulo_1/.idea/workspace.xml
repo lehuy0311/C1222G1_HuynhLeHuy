@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d3b45bfc-633a-4737-934a-a98d44b6b6be" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Modulo_3/ss6_css/practice/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_2_again/src/ss6_inheritance/Cylinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_2_again/src/ss6_inheritance/Cylinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_3/.idea/Modulo_3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_3/.idea/Modulo_3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_3/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_3/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Modulo_3/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_3/Demo/Demo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modulo_3/case_study/case_study.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2JqMeyNBs2CQSKTlAvLPPEjjoP7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunAnythingCache">
+    <myKeys>
+      <visibility group="Grunt tasks" flag="true" />
+      <visibility group="Gulp tasks" flag="true" />
+      <visibility group="Node.js" flag="true" />
+      <visibility group="Recent projects" flag="true" />
+      <visibility group="Run configurations" flag="true" />
+      <visibility group="com.intellij.ide.actions.runAnything.RunAnythingRunConfigurationProvider" flag="true" />
+      <visibility group="com.intellij.ide.actions.runAnything.activity.RunAnythingRecentProjectProvider" flag="true" />
+      <visibility group="com.intellij.lang.javascript.buildTools.grunt.GruntRunAnythingProvider" flag="true" />
+      <visibility group="com.intellij.lang.javascript.buildTools.gulp.GulpRunAnythingProvider" flag="true" />
+      <visibility group="com.intellij.lang.javascript.buildTools.npm.NpmRunAnythingProvider.Npm" flag="true" />
+      <visibility group="com.intellij.lang.javascript.buildTools.npm.NpmRunAnythingProvider.Yarn" flag="true" />
+      <visibility group="com.jetbrains.nodejs.execution.NodeRunAnythingProvider" flag="true" />
+      <visibility group="npm" flag="true" />
+      <visibility group="yarn" flag="true" />
+    </myKeys>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d3b45bfc-633a-4737-934a-a98d44b6b6be" name="Default Changelist" comment="" />
+      <created>1672801258801</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672801258801</updated>
+      <workItem from="1672801259954" duration="580000" />
+      <workItem from="1672801867431" duration="6164000" />
+      <workItem from="1672814046571" duration="10326000" />
+      <workItem from="1672842287590" duration="3536000" />
+      <workItem from="1672855375196" duration="319000" />
+      <workItem from="1672886617631" duration="5889000" />
+      <workItem from="1672977569005" duration="13501000" />
+      <workItem from="1673232848128" duration="5264000" />
+      <workItem from="1673245872811" duration="12632000" />
+      <workItem from="1673269463922" duration="1415000" />
+      <workItem from="1673313528787" duration="11860000" />
+      <workItem from="1673332495520" duration="5286000" />
+      <workItem from="1673342560576" duration="2537000" />
+      <workItem from="1673406611851" duration="130000" />
+      <workItem from="1673407845239" duration="3835000" />
+      <workItem from="1673418465106" duration="12411000" />
+      <workItem from="1673442177919" duration="1618000" />
+      <workItem from="1673490660962" duration="6866000" />
+      <workItem from="1673505282598" duration="7711000" />
+      <workItem from="1673579598262" duration="5475000" />
+      <workItem from="1673596046933" duration="6813000" />
+      <workItem from="1673617512122" duration="692000" />
+      <workItem from="1673619805500" duration="597000" />
+      <workItem from="1673837312604" duration="839000" />
+      <workItem from="1675130438698" duration="8501000" />
+      <workItem from="1675147140343" duration="7160000" />
+      <workItem from="1675173043697" duration="87000" />
+      <workItem from="1675221807298" duration="4552000" />
+      <workItem from="1675234016511" duration="9712000" />
+      <workItem from="1675260252758" duration="598000" />
+      <workItem from="1675299979185" duration="7409000" />
+      <workItem from="1675320526160" duration="8548000" />
+      <workItem from="1675393285414" duration="3316000" />
+      <workItem from="1675413333093" duration="5276000" />
+      <workItem from="1675426638481" duration="2250000" />
+      <workItem from="1675651598993" duration="5231000" />
+      <workItem from="1675665488087" duration="6600000" />
+      <workItem from="1675691788448" duration="1422000" />
+      <workItem from="1675732632251" duration="3832000" />
+      <workItem from="1675819284373" duration="1017000" />
+      <workItem from="1675824651517" duration="879000" />
+      <workItem from="1675838169001" duration="9040000" />
+      <workItem from="1675863805212" duration="1471000" />
+      <workItem from="1675909016497" duration="4065000" />
+      <workItem from="1675925412075" duration="4180000" />
+      <workItem from="1675945121898" duration="2208000" />
+      <workItem from="1675992494440" duration="4044000" />
+      <workItem from="1676011160939" duration="3885000" />
+      <workItem from="1676250008799" duration="8583000" />
+      <workItem from="1676270854829" duration="9282000" />
+      <workItem from="1676335860463" duration="1267000" />
+      <workItem from="1680926801580" duration="727000" />
+      <workItem from="1681184475269" duration="854000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="845" y="383" key="#Notifications" timestamp="1672801890952">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="845" y="383" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1672801890952" />
+    <state x="718" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1673257795648">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="718" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1673257795648" />
+    <state x="1265" y="244" key="FileChooserDialogImpl" timestamp="1681184608279">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1265" y="244" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1681184608279" />
+    <state x="804" y="222" key="RollbackChangesDialog" timestamp="1673251525864">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="804" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1673251525864" />
+    <state width="254" height="198" key="RunAnythingAction_Filter_Popup" timestamp="1673246306099">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="254" height="198" key="RunAnythingAction_Filter_Popup/0.0.1920.1040@0.0.1920.1040" timestamp="1673246306099" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1" timestamp="1675243240705">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1675243240705" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-2" timestamp="1675243240705">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1675243240705" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1676013599873">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1676013599873" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1675937528096">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1675937528096" />
+  </component>
+</project>
