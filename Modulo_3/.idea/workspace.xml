@@ -23,65 +23,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95d36e58-d3af-492e-b51d-aefc6afa8efe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/java/com/mvc/customer_management/controller/CustomerServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/java/com/mvc/customer_management/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/java/com/mvc/customer_management/service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/java/com/mvc/customer_management/service/CustomerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/webapp/customer/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/webapp/customer/delete.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/webapp/customer/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/webapp/customer/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/webapp/customer/view.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/webapp/error-404.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_website_layout/exercise/layout_anime/anime.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_website_layout/exercise/layout_anime/anime.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C0223G1-Repo-BE" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/.gradle/8.0.2/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/.gradle/8.0.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/.gradle/8.0.2/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/.gradle/8.0.2/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/.gradle/8.0.2/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/.gradle/8.0.2/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/.gradle/8.0.2/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/.gradle/8.0.2/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/.gradle/8.0.2/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/.gradle/8.0.2/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/.gradle/file-system.probe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/build/classes/java/main/com/example/customer_management/controller/CustomerServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/build/classes/java/main/com/example/customer_management/model/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/build/classes/java/main/com/example/customer_management/service/CustomerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/build/classes/java/main/com/example/customer_management/service/CustomerServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/build/libs/customer_management-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/build/tmp/compileJava/compileTransaction/stash-dir/CustomerServlet.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/customer_management/build/tmp/war/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/product_management/.gradle/8.0.2/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/product_management/.gradle/8.0.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/product_management/.gradle/8.0.2/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/product_management/.gradle/8.0.2/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/product_management/.gradle/8.0.2/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/product_management/.gradle/8.0.2/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/product_management/.gradle/8.0.2/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/product_management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/product_management/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/product_management/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/product_management/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/product_management/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/product_management/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/product_management/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/exercise/product_management/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/.gradle/8.0.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/.gradle/8.0.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/.gradle/8.0.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/.gradle/8.0.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/java/com/mvc/customer_management/controller/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/java/com/mvc/customer_management/controller/CustomerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/java/com/mvc/customer_management/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/java/com/mvc/customer_management/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/webapp/customer/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/webapp/customer/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/webapp/customer/delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/webapp/customer/delete.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/webapp/customer/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/webapp/customer/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/webapp/customer/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/webapp/customer/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/webapp/customer/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/webapp/customer/view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/webapp/error-404.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/webapp/error-404.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_mvc_model/practice/customer_management/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,7 +206,8 @@
       <workItem from="1683876850359" duration="66000" />
       <workItem from="1683882208637" duration="18000" />
       <workItem from="1684132832420" duration="562000" />
-      <workItem from="1684911627936" duration="5493000" />
+      <workItem from="1684911627936" duration="7376000" />
+      <workItem from="1684989246808" duration="1045000" />
     </task>
     <servers />
   </component>
