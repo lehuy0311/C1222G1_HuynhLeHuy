@@ -21,10 +21,9 @@ public class ProductDiscountServlet extends HttpServlet {
         int discountPercent = Integer.parseInt(req.getParameter("DiscountPercent"));
         double discountAmount = listPrice * discountPercent * 0.01;
         int discountPrice = (int) (listPrice - discountAmount);
-        writer.println("<html><body>");
-        writer.println("<h1>Discount Amount: " + discountAmount + "</h1>");
-        writer.println("<h1>Discount Price: " + discountPrice + "</h1>");
-        writer.println("</body></html>");
+        req.setAttribute("discountAmount" , discountAmount);
+        req.setAttribute("discountPrice" , discountPrice);
+        req.getRequestDispatcher("/result.jsp").forward(req,resp);
 
     }
 }
