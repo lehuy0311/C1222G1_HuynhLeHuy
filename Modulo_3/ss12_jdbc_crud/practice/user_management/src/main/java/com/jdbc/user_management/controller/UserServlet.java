@@ -30,6 +30,7 @@ public class UserServlet extends HttpServlet {
             switch (action) {
                 case "create":
                     insertUser(request, response);
+                    request.setCharacterEncoding("UTF-8");
                     break;
                 case "edit":
                     updateUser(request, response);

@@ -6,8 +6,7 @@
     <title>JSP - Bye World</title>
 </head>
 <body>
-<h1><%= "Bye World!" %>
-</h1>
+<h1><%= "Bye World!" %></h1>
 <br/>
 <a href="/display-list-customer">List Customers</a>
 </body>

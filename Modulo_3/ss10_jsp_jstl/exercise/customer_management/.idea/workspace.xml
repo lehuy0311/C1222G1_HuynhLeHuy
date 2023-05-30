@@ -5,52 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ae7963b-7e08-48de-b6f8-773b423aa4d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/practice/customer_management/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/practice/customer_management/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/practice/customer_management/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/practice/customer_management/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../C0223G1-Repo-BE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/.gradle/8.0.2/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/.gradle/8.0.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/.gradle/8.0.2/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/.gradle/8.0.2/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/.gradle/8.0.2/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/.gradle/8.0.2/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/.gradle/8.0.2/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/.gradle/8.0.2/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/.gradle/8.0.2/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/.gradle/8.0.2/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/.gradle/file-system.probe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/build/classes/java/main/com/example/customer_management/controller/CustomerServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/build/classes/java/main/com/example/customer_management/model/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/build/classes/java/main/com/example/customer_management/service/CustomerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/build/classes/java/main/com/example/customer_management/service/CustomerServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/build/libs/customer_management-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/build/tmp/compileJava/compileTransaction/stash-dir/CustomerServlet.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/customer_management/build/tmp/war/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/.gradle/8.0.2/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/.gradle/8.0.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/.gradle/8.0.2/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/.gradle/8.0.2/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/.gradle/8.0.2/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/.gradle/8.0.2/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/.gradle/8.0.2/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculator/src/main/java/com/example/calculator/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculator/src/main/java/com/example/calculator/CalculatorServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculator/src/main/webapp/calculator.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/customer_management-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/customer_management-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/list-customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/list-customer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_management/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_management/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_management/src/main/java/com/jdbc/user_management/controller/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_crud/practice/user_management/src/main/java/com/jdbc/user_management/controller/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss9_overview_web/exercise/product_discount/.gradle/8.0.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss9_overview_web/exercise/product_discount/.gradle/8.0.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss9_overview_web/exercise/product_discount/.gradle/8.0.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss9_overview_web/exercise/product_discount/.gradle/8.0.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss9_overview_web/exercise/product_discount/.gradle/8.0.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss9_overview_web/exercise/product_discount/.gradle/8.0.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss9_overview_web/exercise/product_discount/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss9_overview_web/exercise/product_discount/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss9_overview_web/exercise/product_discount/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss9_overview_web/exercise/product_discount/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss9_overview_web/exercise/product_discount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss9_overview_web/exercise/product_discount/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,6 +194,8 @@
       <workItem from="1684771401133" duration="297000" />
       <workItem from="1684893182263" duration="361000" />
       <workItem from="1684893661399" duration="880000" />
+      <workItem from="1685421100957" duration="1716000" />
+      <workItem from="1685428672971" duration="979000" />
     </task>
     <servers />
   </component>
