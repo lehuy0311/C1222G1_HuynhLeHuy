@@ -72,13 +72,13 @@ public class UserServlet extends HttpServlet {
             throws SQLException, IOException, ServletException {
         List<User> listUser = userDAO.selectAllUsers();
         request.setAttribute("listUser", listUser);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("user/list.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/view/user/list.jsp");
         dispatcher.forward(request, response);
     }
 
     private void showNewForm(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        RequestDispatcher dispatcher = request.getRequestDispatcher("user/create.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/view/user/create.jsp");
         dispatcher.forward(request, response);
     }
 
@@ -86,7 +86,7 @@ public class UserServlet extends HttpServlet {
             throws SQLException, ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         User existingUser = userDAO.selectUser(id);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("user/edit.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/view/user/edit.jsp");
         request.setAttribute("user", existingUser);
         dispatcher.forward(request, response);
 
@@ -99,7 +99,7 @@ public class UserServlet extends HttpServlet {
         String country = request.getParameter("country");
         User newUser = new User(name, email, country);
         userDAO.insertUser(newUser);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("user/create.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/view/user/create.jsp");
         dispatcher.forward(request, response);
     }
 
@@ -112,7 +112,7 @@ public class UserServlet extends HttpServlet {
 
         User book = new User(id, name, email, country);
         userDAO.updateUser(book);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("user/edit.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/view/user/edit.jsp");
         dispatcher.forward(request, response);
     }
 
@@ -123,7 +123,7 @@ public class UserServlet extends HttpServlet {
 
         List<User> listUser = userDAO.selectAllUsers();
         request.setAttribute("listUser", listUser);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("user/list.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/view/user/list.jsp");
         dispatcher.forward(request, response);
     }
 }

@@ -1,0 +1,311 @@
+
+<html>
+<head>
+    <title>Hoa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /***********************/
+        /***********************/
+        *,
+        *::after,
+        *::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Noto Sans", sans-serif;
+        }
+
+        /***********************/
+        /***********************/
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            height: 100vh;
+            width: 100%;
+            background-color: #ebeff5;
+        }
+
+        .container {
+            position: relative;
+            width: 500px;
+        }
+
+        .svg-icon {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+        .svg-icon:hover {
+            transform: scale(1.05);
+        }
+
+        .svg-icon path,
+        .svg-icon polygon,
+        .svg-icon rect {
+            fill: #ffffff;
+        }
+
+        .login,
+        .signup {
+            width: 100%;
+            display: grid;
+            grid-gap: 15px;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.06);
+        }
+        .login__icon,
+        .signup__icon {
+            font-size: 1.125rem;
+            font-weight: bold;
+            letter-spacing: -0.025rem;
+            line-height: 1;
+        }
+        .login__title,
+        .signup__title {
+            margin-bottom: 17.5px;
+            font-size: 1.424rem;
+            font-weight: bold;
+            letter-spacing: -0.075rem;
+            line-height: 1;
+        }
+        .login__title::first-letter,
+        .signup__title::first-letter {
+            text-transform: capitalize;
+        }
+        .login__row,
+        .signup__row {
+            display: grid;
+            grid-gap: 8px;
+        }
+        .login__label,
+        .signup__label {
+            font-family: "Montserrat", sans-serif;
+            font-size: 0.79rem;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        .login__input, .login__button,
+        .signup__input,
+        .signup__button {
+            height: 40px;
+            font-size: 0.79rem;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .login__input,
+        .signup__input {
+            padding: 0 17.5px;
+            background-color: transparent;
+        }
+        .login__button,
+        .signup__button {
+            height: 45px;
+            font-size: 0.702rem;
+            letter-spacing: 0.075rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .login__link,
+        .signup__link {
+            font-size: 0.702rem;
+            text-align: center;
+            cursor: pointer;
+        }
+        .login__link::first-letter,
+        .signup__link::first-letter {
+            text-transform: capitalize;
+        }
+
+        .login {
+            background-color: #ffffff;
+        }
+        .login__icon {
+            color: black;
+        }
+        .login__title {
+            color: #151515;
+        }
+        .login__label {
+            color: #151515;
+        }
+        .login__input, .login__button {
+            border: 1px solid #151515;
+            outline-color: #151515;
+        }
+        .login__input {
+            color: #625a85;
+            caret-color: #151515;
+        }
+        .login__input::placeholder {
+            color: #9791b4;
+        }
+        .login__button {
+            background-color: #151515;
+            color: #ffffff;
+        }
+        .login__link {
+            color: #b4afc9;
+        }
+
+        .signup {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 100%;
+            height: 470px;
+            transform-origin: top right;
+            transition: 250ms;
+            background-color: #151515;
+        }
+        .signup__wrapper {
+            width: 100%;
+            display: grid;
+            grid-gap: 15px;
+            visibility: visible;
+            opacity: 1;
+            transition: 250ms cubic-bezier(0.17, 0.67, 0.68, 1.39) 100ms;
+        }
+        .signup__icon {
+            color: #ffffff;
+        }
+        .signup__title {
+            color: #ffffff;
+            text-transform: capitalize;
+        }
+        .signup__row--flex {
+            display: flex;
+            justify-content: space-between;
+        }
+        .signup__trigger--fixed {
+            position: absolute;
+            transition: 100ms cubic-bezier(0.17, 0.67, 0.68, 1.39) 400ms;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+        }
+        .signup__label {
+            color: #ffffff;
+        }
+        .signup__input, .signup__button {
+            border: 1px solid #ffffff;
+            outline-color: #ffffff;
+        }
+        .signup__input {
+            color: rgba(255, 255, 255, 0.85);
+            caret-color: #ffffff;
+        }
+        .signup__input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .signup__button {
+            background-color: #ffffff;
+            color: #151515;
+        }
+        .signup__link {
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .is-form-open {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: -15px;
+            top: -15px;
+            width: 70px;
+            height: 70px;
+            transform: translateY(0);
+            overflow: hidden;
+            border-radius: 24px;
+            transform-origin: top right;
+            transition: 250ms cubic-bezier(0.17, 0.67, 0.68, 1.39) 100ms;
+        }
+
+        .is-wrapper-open {
+            visibility: hidden;
+            opacity: 0;
+            transform: scale(0.85);
+            transition: 250ms;
+        }
+
+        .is-trigger-hidden {
+            width: 0;
+            height: 0;
+            opacity: 0;
+            right: -100%;
+            transition: 100ms cubic-bezier(0.15, 0.65, 0.65, 1.25);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form class="login form"><span class="login__icon">VH3</span>
+        <h2 class="login__title">Log in to VH3</h2>
+        <div class="login__row">
+            <label class="login__label" for="lg-em">e-mail</label>
+            <input class="login__input" id="lg-em" type="email" placeholder="example@email.com"/>
+        </div>
+        <div class="login__row">
+            <label class="login__label" for="lg-ps">password</label>
+            <input class="login__input" id="lg-ps" type="password" placeholder="**********"/>
+        </div>
+        <div class="login__row">
+            <button class="login__button" type="submit">sign in</button>
+        </div>
+        <div class="login__row"><a class="login__link">forgot your password?</a></div>
+    </form>
+
+
+    <form class="signup is-form-open form" id="signup">
+        <svg class="svg-icon signup__trigger signup__trigger--fixed" viewBox="0 0 20 20">
+            <path d="M14.613,10c0,0.23-0.188,0.419-0.419,0.419H10.42v3.774c0,0.23-0.189,0.42-0.42,0.42s-0.419-0.189-0.419-0.42v-3.774H5.806c-0.23,0-0.419-0.189-0.419-0.419s0.189-0.419,0.419-0.419h3.775V5.806c0-0.23,0.189-0.419,0.419-0.419s0.42,0.189,0.42,0.419v3.775h3.774C14.425,9.581,14.613,9.77,14.613,10 M17.969,10c0,4.401-3.567,7.969-7.969,7.969c-4.402,0-7.969-3.567-7.969-7.969c0-4.402,3.567-7.969,7.969-7.969C14.401,2.031,17.969,5.598,17.969,10 M17.13,10c0-3.932-3.198-7.13-7.13-7.13S2.87,6.068,2.87,10c0,3.933,3.198,7.13,7.13,7.13S17.13,13.933,17.13,10"></path>
+        </svg>
+        <div class="signup__wrapper is-wrapper-open" id="signup-wrapper">
+            <div class="signup__row signup__row--flex"><span class="signup__icon">ocula</span>
+                <svg class="svg-icon signup__trigger" viewbox="0 0 20 20">
+                    <path d="M10.185,1.417c-4.741,0-8.583,3.842-8.583,8.583c0,4.74,3.842,8.582,8.583,8.582S18.768,14.74,18.768,10C18.768,5.259,14.926,1.417,10.185,1.417 M10.185,17.68c-4.235,0-7.679-3.445-7.679-7.68c0-4.235,3.444-7.679,7.679-7.679S17.864,5.765,17.864,10C17.864,14.234,14.42,17.68,10.185,17.68 M10.824,10l2.842-2.844c0.178-0.176,0.178-0.46,0-0.637c-0.177-0.178-0.461-0.178-0.637,0l-2.844,2.841L7.341,6.52c-0.176-0.178-0.46-0.178-0.637,0c-0.178,0.176-0.178,0.461,0,0.637L9.546,10l-2.841,2.844c-0.178,0.176-0.178,0.461,0,0.637c0.178,0.178,0.459,0.178,0.637,0l2.844-2.841l2.844,2.841c0.178,0.178,0.459,0.178,0.637,0c0.178-0.176,0.178-0.461,0-0.637L10.824,10z"></path>
+                </svg>
+            </div>
+            <h2 class="signup__title">sign up for free, now.</h2>
+            <div class="signup__row">
+                <label class="signup__label" for="su-us">username</label>
+                <input class="signup__input" id="su-us" type="text" placeholder="John Doe"/>
+            </div>
+            <div class="signup__row">
+                <label class="signup__label" for="su-em">E-Mail</label>
+                <input class="signup__input" id="su-em" type="email" placeholder="example@email.com"/>
+            </div>
+            <div class="signup__row">
+                <label class="signup__label" for="su-ps">password</label>
+                <input class="signup__input" id="su-ps" type="password" placeholder="**********"/>
+            </div>
+            <div class="signup__row">
+                <button class="signup__button" type="submit">sign up</button>
+            </div>
+            <div class="signup__row"><a class="signup__link">forgot your password?</a></div>
+        </div>
+    </form>
+</div>
+<script>
+    const signupTrigger = document.querySelectorAll(".signup__trigger");
+    const signupElement = document.querySelector("#signup");
+    const signupWrapperElement = document.querySelector("#signup-wrapper");
+    const forms = document.querySelectorAll(".form");
+
+    const openFormFunc = () => {
+        signupTrigger[0].classList.toggle("is-trigger-hidden");
+        signupElement.classList.toggle("is-form-open");
+        signupWrapperElement.classList.toggle("is-wrapper-open");
+    };
+
+    signupTrigger.forEach((s) => s.addEventListener("click", openFormFunc));
+    forms.forEach((f) => f.addEventListener("submit", (e) => e.preventDefault()));
+
+</script>
+</body>
+</html>
